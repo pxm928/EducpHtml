@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>请假审批详情内页</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+	<!--一级联动通用样式-->
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/qingjiashenpi.css" />
+	<style type="text/css">
+		.mui-bar-nav,.mui-bar{ box-shadow:0 0 0 #ccc}
+		.mui-bar-nav.mui-bar .mui-icon.mui-icon-left-nav{font-size:1.4rem;}
+		.com-list p{margin:0; padding: 0;}
+		.com-list p span{display:block;text-align: right;font-size: 0.6rem;}
+		.gonggao{ margin-top:8px;}
+		@media only screen and (min-width: 100px) and (max-width: 320px) {
+			.com-conment a, .com-conment div{font-size: 0.6rem;}
+		}
+		.com-conment a img{ border-radius:50%;}
+	</style>
+	</head>
+	<body  class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">  
+			<div class="mui-view">
+				<div class="statusTop"></div>
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="qj" class="mui-page feedback">
+			<header class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<span class="mui-pull-right" style="color: #fff;">完成</span>
+				<h1 class="mui-text-center mui-title">审批</h1>
+			</header>
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="gonggao active-list">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<div class="comment-list mui-text-left">
+										<div class="com-conment">
+											<div class="com-list">
+												<p class="mui-pull-right">
+													<span>9月26日&nbsp;14：10</span>
+												</p>
+												<a href="javascript:;">
+													<strong><img src="../../images/head.jpg" /></strong><em>秦玄玉</em>
+													<div class="apply">申请人：<em>爸爸</em></div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="detail">
+								<div class="qj-filed">
+									<label>请假天数：</label>
+									<div>1天</div>
+								</div>
+								<div class="qj-filed">
+									<label>请假时间：</label>
+									<div>9月13日 14:00 - 9月15日 14:00</div>
+								</div>
+								<div class="qj-filed">
+									<label>请假理由：</label>
+									<div>生病了生病了生病了生病了生病了生病了生了生病了生病了生病了生病了生病了生病了生病生病了病了生病了生病了</div>
+								</div>
+							</div>
+							<h5 class="qingjia">审批信息</h5>
+							<div class="shenpi-list">
+								<b class="borders"></b>
+								<div class="sq">
+									<label class="mui-pull-left"><img src="../../images/baby-head.jpg"/></label>
+									<div class="sq-r">
+										<h6>请假</h6>
+										<div class="sq-div">
+											<span class="leftIco"></span>
+											<div class="waiting"><i class="icon iconfont">&#xe635;</i><em>等待我处理</em></div>
+										</div>
+									</div>
+								</div>
+								<div class="sq">
+									<label class="mui-pull-left"><img src="../../images/baby-head.jpg"/></label>
+									<div class="sq-r">
+										<h6>提交申请</h6>
+										<div class="sq-div">
+											<span class="leftIco"></span>
+											<div class="sb-time mui-pull-right">9月13日 14:56</div>
+											<div class="tijiao"><i class="icon iconfont">&#xe634;</i><em>小明</em><br/>修改了申请表单</div>
+										</div>
+									</div>
+								</div>
+								<div class="sq">
+									<label class="mui-pull-left"><img src="../../images/baby-head.jpg"/></label>
+									<div class="sq-r">
+										<h6>请假</h6>
+										<div class="sq-div">
+											<span class="leftIco"></span>
+											<div class="sb-time mui-pull-right">9月13日 14:56</div>
+											<div class="tijiao"><i class="icon iconfont">&#xe632;</i><em>小贺</em><br/>驳回理由</div>
+										</div>
+									</div>
+								</div>
+								<div class="sq start">
+									<label class="mui-pull-left"><b></b></label>
+									<div class="sq-r">
+										开始申请
+									</div>
+								</div>
+							</div>
+							<div class="mui-table-view mui-grid-view qj-button">
+								<div class="mui-btn mui-btn-primary">
+									驳回
+								</div>
+								<div class="mui-btn mui-btn-danger">
+									同意
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--单页面结束-->
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.view.js "></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#qj'
+		});
+		//初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+	</script>
+</html>

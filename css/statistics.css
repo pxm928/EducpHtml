@@ -1,0 +1,33 @@
+/*统计*/
+/*选项卡切换*/
+.edu-switch{ border:#fff 1px solid;border-radius:5px;width:5.5rem; height: 1.25rem; position: absolute;left: 35%; bottom:0.4rem; display: table;text-align: center;}
+.edu-switch span{ font-size:0.8rem;color:#fff;display:table-cell;}
+.edu-switch span.e{ background: #fff;color:#f85156;}
+.statistics{margin-top:8px;}
+.stat-top{ background-color: #fff;}
+.stat-top h5{text-align: center;color: #7f6767; padding-top: 10px;font-size: 0.9rem;}
+.stat-top .mm{padding: 10px 0 15px; width:50%; float: left;text-align: center; color: #7f6767; font-size: 0.8rem;}
+.stat-top .mm i{font-size: 0.9rem;padding-right: 4px;}
+.ren-number i{display: block;}
+.ren-number b{ color: #ff7f83;}
+.ren-number .mui-grid-view.mui-grid-9{ background-color: #fff;overflow: hidden;border-left: none;}
+.ren-number .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-bottom: none;font-size: 0.8rem;}
+.ren-number .mui-grid-view.mui-grid-9 .mui-table-view-cell:last-child{border-right: none;}
+.stat-min{ background-color: #fff; margin-top:5px;}
+.tongji img{ width:100%; overflow: hidden;}
+.kc-title{border-bottom: #e3e3e5 1px solid;height:2rem;line-height:2rem;text-indent: 11px;color: #806766; font-weight: normal;font-size: 1.2rem;}
+.mui-card{margin:0; margin-top:5px; border-radius: 0; box-shadow:0 0 0 0;}
+.mui-card .mui-table-view{border-radius:0;}
+.mui-card span{ margin-right: 1rem; color: #c3b2b2;}
+.mui-card .mui-table-view a{ color: #7f6767;}
+.comment-list{margin:0.3rem 0.5rem 0.2rem 0.5rem; padding-bottom: 0.2rem;overflow: hidden;}
+.com-conment{padding: 0.4rem 0 0.2rem;}
+.com-conment a{ text-indent: 0.5rem;color: #875656;}
+.com-conment a,.com-conment div{font-size: 0.7rem;}
+.com-conment div{color:#938585;}
+.com-conment strong{text-indent: 0;background: #ddd;width:2rem; height: 2rem; border-radius: 2rem;float:left; margin-right: 0.5rem; }
+.com-conment a img{max-width:2rem;border-radius: 100%;height:100%}
+.comment-list .more{ padding:0.4rem 0}
+.active-list .mui-table-view-cell{ padding: 0;}
+.active-list .mui-table-view:before,.active-list .mui-table-view:after,.active-list .mui-table-view-cell:after{ background: none;}
+.active-list li{ border-bottom: #eee 1px solid;}

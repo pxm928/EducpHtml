@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>活动详情</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+	<!--一级联动通用样式-->
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/active.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/ggDetail.css" />
+    <!--公告列表-->
+    <link href="../../css/activeList.css" rel="stylesheet"/>
+	<style type="text/css">
+		body, .mui-content {background-color: #efeff4;}
+		.mui-bar-nav,.mui-bar{ box-shadow:0 0 0 #ccc}
+		.mui-bar-nav.mui-bar .mui-icon.mui-icon-left-nav{ font-size:1.4rem;}
+		.active a i.mui-xiajiantou{ color: #7f6767;font-size: 1.1rem;}
+		.active-top{position:relative; height: 200px; overflow: hidden;}
+		.leyuanName{ padding-right: 10px;}
+		.leyuanName p span{color: #FFFFFF;}
+		.active{padding: 0.4rem 0;}
+		.active-baseInfo{padding: 0 0.4rem;}
+		.active .act-filed,.act-text,.actDetail{font-size: 14px;}
+		.com-conment div:active{ background-color: transparent;}
+		.gonggao{margin-top: 0;}
+		.active-list .mui-table-view li{margin-bottom:0;}
+		.comment-list{padding-bottom:0;background-color: transparent;}
+		.mui-table-view-cell{ padding: 0 10px;}
+		.com-conment a, .com-conment div, .comment-list .more{ font-size: 0.7rem;}
+		.mui-table-view .com-list .mui-media-body{overflow: hidden;padding-left:0;padding-right:0;text-indent:0;}
+		.active-box{margin-bottom: 0.4rem;background: #FFFFFF; padding-bottom: 0.4rem;}
+		.me div:active{background-color: #f0e4e4;}
+		.com-head {border-bottom:1px solid #eee;color: #875656;padding: 0.2rem 0.5rem;}
+		.com-head a{color: inherit;font-size: 0.6rem;padding-right: 0.2rem;}
+	</style>
+	</head>
+	<body class="mui-fullscreen" style="overflow: hidden;">
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<div class="mui-inner-wrap">
+			 	<div class="statusTop"></div>
+			 	<div class="mui-control-content mui-active">
+			 		<header class="mui-bar mui-bar-nav">
+						<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+							<span class="mui-icon mui-icon-left-nav"></span>
+						</button>
+						<h1 class="mui-title">活动详情</h1>
+						<div class="icon-group">
+							<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe630;</a>
+							</div>
+					</header>
+					<div class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="active">
+								<div class="active-top">
+									<label class="mm ing">进行中</label>
+									<img src="../../images/active1.jpg" />
+									<div class="leyuanName">
+										<p>
+											<span style="color:#e76c6c;"><i class="icon iconfont" style="font-size: 0.9rem;">&#xe608;</i>&nbsp;24</span>
+											<span><i class="icon iconfont">&#xe609;</i>&nbsp;26</span>
+										</p>
+									</div>
+								</div>
+								<div class="active-baseInfo">
+									<h5><a href="javascript://">周末聚会治愈孤独的人</a></h5>
+									<div class="actDiv mui-table">
+										<div class="mui-table-cell">
+											<div style="overflow: hidden;">
+												<div class="act-filed mui-pull-left mui-ellipsis">开始时间：</div>
+												<div class="mui-col-xs-8 mui-pull-left act-text">2016/09/20</div>
+											</div>
+											<div style="overflow: hidden;">
+												<div class="act-filed mui-pull-left mui-ellipsis">结束时间：</div>
+												<div class="mui-col-xs-8 mui-pull-left act-text">2016/09/20</div>
+											</div>
+											<div style="overflow: hidden;">
+												<div class="act-filed mui-pull-left mui-ellipsis">活动地点：</div>
+												<div class="mui-col-xs-8 mui-pull-left act-text">上海世博家园</div>
+											</div>
+										</div>
+									</div>
+									<div class="actDetail mui-text-justify">
+										使用ROW和LIST构造函数创建字段列表。
+										Use ROW and LIST constructors to create lists of fields.www.ibm.com2方法描述符结合了字段描述符，以指定方法的参数类型和返回类型。
+										A method descriptor just combines field descriptors to specify the parameter types and return type of a method. 
+									</div>
+								</div>
+							</div>
+							<div class="active-box">
+								<div class="mui-bar-tab gg-switch">
+				        			<a style="width:62%" class="mui-tab-item mui-active" href="#pinglun"><em>活动图展</em></a>
+					        		<span></span>
+				        		</div>
+				        		<div style="padding:0.4rem;">
+				        			<div class="listimage" style="overflow: hidden;">
+					        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left;">
+					        				<img src="../../images/active2.jpg" />
+					        			</div>
+					        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left;">
+					        				<img src="../../images/active2.jpg" />
+					        			</div>
+					        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left;">
+					        				<img src="../../images/active2.jpg" />
+					        			</div>
+					        		</div>
+				        		</div>
+							</div>
+							<div class="active-box">
+								<p class="com-head">
+									<i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>
+									<a href="javascript://">张老师</a><a href="javascript://">陈老师</a>
+									<a href="javascript://">李老师</a>
+								</p>
+								<div class="mui-bar-tab gg-switch">
+				        			<a style="width:62%" class="mui-tab-item mui-active" href="#pinglun"><em>评论0</em></a>
+					        		<span></span>
+				        		</div>
+				        		<div class="mui-clearfix"></div>
+				        		<div class="switchDiv">
+				        			<div class="mui-control-content pinglun mui-active"id="pinglun">
+				        				<span class="no" style="display: none;">还没人评论</span>
+				        				<div class="gonggao active-list">
+											<ul class="mui-table-view">
+												<li class="mui-table-view-cell mui-media nopaddion-top">
+													<div class="comment-list mui-text-left nomargin-top">
+														<div class="com-conment">
+															<div class="com-list">
+																<span class="mui-pull-right" style="color:#875656;">回复</span>
+																<a href="javascript:;">
+																	<strong><img src="../../images/head.jpg" /></strong>张老师
+																</a>
+																<div class="mui-media-body mui-text-left">
+																	<div class="he">12：20</div>
+																	<div>宝宝好棒，吹拉弹唱样样精通！吹拉弹唱样样精通吹拉弹唱样样精通</div>
+																	<div class="me">
+																		<a href="javascript:;">
+																			<strong><img src="../../images/img-list1.jpg" /></strong>陈麻麻
+																		</a>
+																		<b>回复</b>
+																		<a href="javascript:;">张老师</a>
+																		<div class="mui-media-body mui-text-left">
+																			蝴蝶飞过； 的福利来了发到了法国；蝴蝶飞过； 的福利来了发到了法国；
+																		</div>
+																	</div>
+																	<div class="he">
+																		<a href="javascript:;">
+																			<strong><img src="../../images/head.jpg" /></strong>张老师
+																		</a>
+																		<b>回复</b>
+																		<a href="javascript:;">陈麻麻</a>
+																		<div class="mui-media-body mui-text-left">
+																			今天宝宝表现不错呢</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="mui-table-view-cell mui-media nopaddion-top">
+													<div class="comment-list mui-text-left nomargin-top">
+														<div class="com-conment">
+															<div class="com-list">
+																<span class="mui-pull-right" style="color:#875656;">回复</span>
+																<a href="javascript:;">
+																	<strong><img src="../../images/head.jpg" /></strong>张老师
+																</a>
+																<div class="mui-media-body mui-text-left">
+																	<div class="he">12：20</div>
+																	<div>宝宝好棒，吹拉弹唱样样精通！吹拉弹唱样样精通吹拉弹唱样样精通</div>
+																	<div class="me">
+																		<div>
+																			<a href="javascript:;">
+																				<strong><img src="../../images/img-list1.jpg" /></strong>陈麻麻
+																			</a>
+																			<b>回复</b>
+																			<a href="javascript:;">张老师</a>
+																			<div class="mui-media-body mui-text-left">
+																				蝴蝶飞过； 的福利来了发到了法国；蝴蝶飞过； 的福利来了发到了法国；
+																			</div>
+																		</div>
+																	</div>
+																	<div class="me">
+																		<div>
+																			<a href="javascript:;">
+																				<strong><img src="../../images/img-list1.jpg" /></strong>陈麻麻
+																			</a>
+																			<b>回复</b>
+																			<a href="javascript:;">张老师</a>
+																			<div class="mui-media-body mui-text-left">
+																				蝴蝶飞过； 的福利来了发到了法国；蝴蝶飞过； 的福利来了发到了法国；
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+				        		</div>
+							</div>
+						</div>
+					</div>
+			 	</div>
+			</div>
+		</div>
+	<!--右下角弹出菜单-->
+	<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+		<div class="mui-popover-arrow"></div>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#">
+							<span class="fenxiang mui-pull-right">
+								<i class="icon iconfont" style="color: #38abf4;">&#xe600;</i>
+								<i class="icon iconfont" style="color: #04d40c;">&#xe60c;</i>
+								<i class="icon iconfont" style="color: #ff6349;">&#xe611;</i>
+								<i class="icon iconfont" style="color: #2199ed;">&#xe613;</i>
+								<i class="icon iconfont" style="color: #04d40c;">&#xe612;</i>
+							</span>
+							<i class="icon iconfont" style="font-size: 1.1rem;">&#xe60f;</i>分享到
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">
+							<i class="icon iconfont" style="font-size: 1.1rem;">&#xe610;</i>下载
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">
+							<i class="icon iconfont">&#xe60b;</i>收藏
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.view.js"></script>
+	<script src='../../js/feedback.js'></script>
+	<script>
+		mui.init();
+		//初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+	</script>
+
+</html>

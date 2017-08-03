@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>课程表</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+	<!--一级联动通用样式-->
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/kechengbiao.css" />
+	<!--一级选择连动样式-->
+	<link href="../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+	<style type="text/css">
+		.mui-bar-nav{ top:20px;}
+		.mui-bar-nav,.mui-bar{ box-shadow:0 0 0 #ccc}
+		.mui-bar-nav.mui-bar .mui-icon.mui-icon-left-nav{ font-size:1.4rem;}
+		#topPopover{height:6rem;}
+    	#topPopover .mui-table-view-cell{ padding: 11px 10px;}
+	</style>
+	</head>
+	<body class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="statusTop"></div>
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="shipu" class="mui-page">
+			<header class="mui-navbar-inner mui-bar mui-bar-nav">
+					<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+						<span class="mui-icon mui-icon-left-nav"></span>
+					</button>
+					<h1 class="mui-text-center mui-title">
+						第一周&nbsp;&nbsp;<i class="icon iconfont">&#xe60a;</i>
+						<em class="dangqian" style="display: none;">返回当前周</em>
+					</h1> 
+					<div class="icon-group">
+						<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe630;</a>
+					</div>
+				</header>
+			<div class="mui-page-content">
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="week-div">
+							<div class="change-week">
+								<i class="icon iconfont">&#xe629;</i>
+								<span id='showUserPicker'>修改<br/>当前周</span>
+							</div>
+							<div class="week-box">
+								<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="height:3.3rem">
+									<div class="mui-scroll">
+										<ul>
+											<li>
+												<span><em>1</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li class="current">
+												<span><em>2</em></span>
+												<p>（当前周）</p>
+											</li>
+											<li class="e">
+												<span><em>3</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>4</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>5</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>6</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>7</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>8</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>9</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>10</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+											<li>
+												<span><em>11</em></span>
+												<img src="../../images/shiyitu.gif" />
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="time-left">
+							<li>08:00<span>1</span></li>
+							<li>09:00<span>2</span></li>
+							<li>10:00<span>3</span></li>
+							<li>11:00<span>4</span></li>
+							<li>12:00<span>5</span></li>
+							<li>13:00<span>6</span></li>
+							<li>14:00<span>7</span></li>
+							<li>15:00<span>8</span></li>
+							<li>16:00<span>9</span></li>
+							<li>17:00<span>10</span></li>
+							<li>18:00<span>11</span></li>
+							<li>19:00<span>12</span></li>
+							<li>20:00<span>13</span></li>
+						</ul>
+						<div class="kcb-area">
+							<div class="day-bg"></div>
+							<div class="border"></div>
+							<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="height:20rem;">
+								<div class="mui-scroll">
+									<div class="day-div">
+										<ul>
+											<li>
+												<span>周一</span>
+												<p>12-10</p>
+											</li>
+											<li class="e">
+												<span>周二</span>
+												<p>12-11</p>
+											</li>
+											<li>
+												<span>周三</span>
+												<p>12-12</p>
+											</li>
+											<li>
+												<span>周四</span>
+												<p>12-13</p>
+											</li>
+											<li>
+												<span>周五</span>
+												<p>12-14</p>
+											</li>
+											<li>
+												<span>周六</span>
+												<p>12-14</p>
+											</li>
+											<li>
+												<span>周日</span>
+												<p>12-15</p>
+											</li>
+										</ul>
+									</div>
+									<div class="kechengbiao">
+										<div class="kc-list">
+											<ul>
+												<li class="blue" style="height:5.2rem"><span>语文</span></li>
+												<li class="green"style="height:2.6rem"><span>美术</span></li>
+												<li class="yellow"style="height:2.6rem"><span>区域活动</span></li>
+												<li class="violet"style="height:5.2rem"><span>科学</span></li>
+											</ul>
+											<ul class="e">
+												<li class="red"style="height:5.2rem"><span>体育</span></li>
+												<li class="yellow"style="height:2.6rem"><span>数学</span></li>
+												<li class="blue"style="height:5.2rem"><span>故事欣赏</span></li>
+											</ul>
+											<ul>
+												<li class="green"style="height:2.6rem"><span></span></li>
+												<li class="blue" style="height:5.2rem"><span>语文</span></li>
+												<li class="violet"style="height:5.2rem"><span>科学</span></li>
+												<li class="green"style="height:2.6rem"><span>美术</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--单页面结束-->
+		<!--修改当前周-->
+		<div id='userResult' class="ui-alert"></div>
+	<!--右上角弹出菜单-->
+	<div id="topPopover" class="mui-popover">
+		<div class="mui-popover-arrow"></div>
+		<ul class="mui-table-view menu-operation">
+			<li class="mui-table-view-cell">
+				<a href="../Recipes/addshipu.html"><i class="icon iconfont">&#xe60e;</i>添加食谱</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>添加菜品</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>添加菜品</a>
+			</li>
+		</ul>
+	</div>
+
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.view.js "></script>
+	<script src='../../js/feedback.js'></script>
+	<script src="../../js/mui.picker.js"></script>
+	<script src="../../js/mui.poppicker.js"></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#shipu'
+		});
+		//初始化单页view
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			 scrollX: true, //是否横向滚动
+			 startX: 0, //初始化时滚动至x
+			 startY: 0, //初始化时滚动至y
+			 indicators: false, //是否显示滚动条
+			 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+			 bounce: true //是否启用回弹		
+		});
+		var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else { //执行webview后退
+					oldBack();
+				}
+			};
+			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+			view.addEventListener('pageBeforeShow', function(e) {
+				//				console.log(e.detail.page.id + ' beforeShow');
+			});
+			view.addEventListener('pageShow', function(e) {
+				//				console.log(e.detail.page.id + ' show');
+			});
+			view.addEventListener('pageBeforeBack', function(e) {
+				//				console.log(e.detail.page.id + ' beforeBack');
+			});
+			view.addEventListener('pageBack', function(e) {
+				//				console.log(e.detail.page.id + ' back');
+			});
+		})(mui);
+		
+//		第几周/星期几处左右滑动js
+		var lis = document.querySelectorAll(".week-box li").length;
+		document.querySelectorAll(".week-box ul")[0].style.width=(2.6*lis)+"rem";
+		var lis2 = document.querySelectorAll(".day-div li").length;
+		document.querySelectorAll(".day-div ul")[0].style.width=(2.75*lis2)+"rem";
+		(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//普通示例
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'ywj',
+						text: '第一周'
+					}, {
+						value: 'aaa',
+						text: '第二周'
+					}, {
+						value: 'lj',
+						text: '第三周'
+					}, {
+						value: 'ymt',
+						text: '第四周'
+					}, {
+						value: 'shq',
+						text: '第五周'
+					}, {
+						value: 'zhbh',
+						text: '第六周'
+					}, {
+						value: 'zhy',
+						text: '第七周'
+					}, {
+						value: 'gyf',
+						text: '第八周'
+					}, {
+						value: 'zhz',
+						text: '第九周'
+					}, {
+						value: 'gezh', 
+						text: '第十周'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText = JSON.stringify(items[0]);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+
+		//点击给其当前状态
+		var weekLi = document.querySelectorAll('.day-div li');
+		var uls = document.querySelectorAll('.kc-list ul');
+		for(var i=0;i<weekLi.length;i++){
+			var index=0;
+			weekLi[i].onclick=function(){
+				for(var i=0;i<weekLi.length;i++){
+					weekLi[i].className="";
+				}
+				this.className="e";
+			}
+		}
+	</script>
+</html>

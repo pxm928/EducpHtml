@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/setting.css" />
+	<style type="text/css">
+		.mui-bar-nav{ top:20px;}
+		.mui-bar-nav,.mui-bar{ box-shadow:0 0 0 #ccc}
+		.mui-bar-nav.mui-bar .mui-icon.mui-icon-left-nav{ font-size:1.4rem;}
+	</style>
+	</head>
+	<body class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+					<div class="statusTop"></div>
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="addshipu" class="mui-page">
+			<header class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-text-center mui-title">设置</h1>
+			</header>
+			<div class="mui-page-content">
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-card">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell first-Item">
+									<a class="mui-navigate-right" href="#checkWeek">
+										<span class="mui-pull-right"><img src="../../images/apple-touch-icon-precomposed.png" class="touxiang" /></span> 学生切换
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#checkday">
+										<span class="mui-pull-right"><i class="icon iconfont" style="font-size: 0.6rem; padding-right: 3px;color: #007AFF;">&#xe642;</i>已开启</span> 账户安全
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#checkday">
+										<span class="mui-pull-right">魂牵梦萦</span>提醒设置
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#checkday">
+										<span class="mui-pull-right">魂牵梦萦</span>消息通知
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="">
+										<span class="mui-pull-right"></span>权限设置
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="">
+										<span class="mui-pull-right"></span>关于产*名
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mui-card">
+							<ul class="mui-table-view SignOut">
+								<li class="mui-table-view-cell">
+									<a class="mui-text-center"id='confirmBtn'>
+										退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--单页面结束-->
+		<!--选择周单页面start-->
+		<div id="checkWeek" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-text-center mui-title">选择周</h1>
+			</div>
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-table-view-radio">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第一周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第二周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第三周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第四周
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-selected">
+								<a class="mui-navigate-right">
+									第五周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第六周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第七周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第八周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第九周
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									第十周
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--选择周单页面end-->
+		<!--选择星期单页面start-->
+		<div id="checkday" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-text-center mui-title">选择天</h1>
+			</div>
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-table-view-radio">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期一
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期二
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期三
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期撕
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-selected">
+								<a class="mui-navigate-right">
+									星期五
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期六
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									星期日
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--选择星期单页面end-->
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.view.js "></script>
+	<script src='../../js/feedback.js'></script>
+<script src="../../js/rem.js"></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#addshipu'
+		});
+		//初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+		var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else { //执行webview后退
+					oldBack();
+				}
+			};
+			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+			view.addEventListener('pageBeforeShow', function(e) {
+				//				console.log(e.detail.page.id + ' beforeShow');
+			});
+			view.addEventListener('pageShow', function(e) {
+				//				console.log(e.detail.page.id + ' show');
+			});
+			view.addEventListener('pageBeforeBack', function(e) {
+				//				console.log(e.detail.page.id + ' beforeBack');
+			});
+			view.addEventListener('pageBack', function(e) {
+				//				console.log(e.detail.page.id + ' back');
+			});
+		})(mui);
+		document.getElementById("confirmBtn").addEventListener('tap', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('是否退出当前账户？', '退出', btnArray, function(e) {
+					if (e.index == 1) {
+						info.innerText = '已经全部提醒';
+					} else {
+						info.innerText = '未提醒'
+					}
+				})
+			});
+		</script>
+</html>

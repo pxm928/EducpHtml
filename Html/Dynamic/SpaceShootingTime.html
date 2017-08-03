@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../fonts/iconfont.css" rel="stylesheet"/>
+	    <!--公用样式-->
+	    <link href="../../css/theme.css" rel="stylesheet"/>
+	    <style type="text/css">
+	    	footer {position: fixed;width: 100%;height:40px;min-height:40px;left: 0px;bottom: 0px;overflow: hidden;background-color: #dd524d;}
+			footer div{ height:40px; color:#FFFFFF; text-align: center; line-height: 40px;}
+			.mui-content{background-color: #eaeaea;height: 100%;overflow: auto;padding: 44px 0 40px;}
+			.many-select{position: absolute; z-index: 111; width:30px; height:30px; border-radius:50%; border: 1px solid #7f6767; text-align:center;background: #FFFFFF;}
+			.many-select span{display: none;}
+			.many-select-e{background:#f85156; border: 1px solid #FFFFFF;}
+			.many-select-e span{display:inline-block; color: #FFFFFF;}
+			.many-select-loca{ bottom:5px; right:5px;}
+			
+			.title-time-box{height: 30px; margin-top:5px;padding-left:15px;}
+			.title-time-select{width:30px; height:30px; float: left;}
+			.title-time-txt{float:left; margin-left: 5px; color: #7f6767;}
+	    </style>
+	</head>
+	<body class="mui-fullscreen">
+		<div class="statusTop"></div>
+		<header class="mui-bar mui-bar-nav">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav"></span>
+			</button>
+			<h1 class="mui-title" id="gggg">拍摄时间</h1>
+		</header>
+		<div class="mui-content">
+			<div class="title-time-box">
+				<div class="title-time-select">
+					<div class="many-select many-select-e">
+						<span class="mui-icon mui-icon-checkmarkempty"></span>
+					</div>
+				</div>
+				<div class="title-time-txt">5岁7个月</div>
+			</div>
+			<div style="padding: 0.4rem;">
+				<div class="listimage" style="overflow: hidden;">
+        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left; position:relative;">
+        				<img src="../../images/active2.jpg" />
+        				<div class="many-select many-select-e many-select-loca">
+							<span class="mui-icon mui-icon-checkmarkempty"></span>
+						</div>
+        			</div>
+        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left;position:relative;">
+        				<img src="../../images/active2.jpg" />
+        				<div class="many-select mui-hidden">
+							<span class="mui-icon mui-icon-checkmarkempty"></span>
+						</div>
+        			</div>
+        			<div class="cell" style="width:100px; height:100px; overflow: hidden; float: left;">
+        				<img src="../../images/active2.jpg" />
+        				<div class="many-select mui-hidden">
+							<span class="mui-icon mui-icon-checkmarkempty"></span>
+						</div>
+        			</div>
+        		</div>
+			</div>
+		</div>
+		<footer>
+			<div>改时间</div>
+		</footer>
+	</body>
+</html>

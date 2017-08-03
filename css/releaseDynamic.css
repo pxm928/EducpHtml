@@ -1,0 +1,15 @@
+/*发布动态*/
+.release{ padding-top:5px;}
+.release a{ overflow: hidden;height:3rem; }
+.release a i {color: #ff7f83;font-size: 1.5rem;float: left;margin-left: 0.5rem; line-height: 3rem;}
+.release a span{ float: left;line-height:3rem;font-size: 0.75rem;color: #7f6767;margin-left: 0.4rem;}
+.release .mui-grid-view.mui-grid-9 .mui-table-view-cell{ border: none; padding: 0 0;}
+.release .mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn){border-right:#ebe2e2 1px solid;background-color: #fff; padding: 0 15px;}
+.release .mui-grid-view.mui-grid-9 .mui-table-view-cell:last-child>a{border-right: none;}
+.mui-card{margin:10px 0}
+.mui-table-view-cell{font-weight: normal; color: #7f6767; font-size: 0.75rem;}
+.release .mui-table-view{ background: none;}
+.mui-card .mui-table-view-cell::after{ left: 0;}
+.mui-card span{ margin-right: 1rem;}
+.mui-card span,.mui-card .mui-table-view-cell>a:not(.mui-btn){ color: #806766;}
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{ color: #f85156;}

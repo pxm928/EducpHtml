@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../css/selectPersonnel.css" rel="stylesheet"/>
+    <style type="text/css">
+    	.mui-navigate-right:before,.mui-push-right:before{left:10px;content:'\e64a';}
+		.mui-navigate-right:after,.mui-push-right:after,.mui-table-view-cell.mui-collapse.mui-active>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse.mui-active>.mui-push-right:after,.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{ content:none;}
+		.mui-table-view-cell.mui-collapse.mui-active>.mui-navigate-right:before, .mui-table-view-cell.mui-collapse.mui-active>.mui-push-right:before{content:"\e649";}
+	</style>
+ </head>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/rem.js"></script>
+<body>
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <div class="mui-inner-wrap">
+    	<div class="statusTop"></div>  
+        <div class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-title">选择人员</h1>
+				<div class="icon-group">
+					
+				</div>
+			</header>
+	        <div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+	        		<div class="input-box">
+						<div class="mui-input-row mui-search">
+							<input type="search" class="mui-input-clear" placeholder="搜索">
+						</div>
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-collapse mui-active">
+							<a class="mui-navigate-right icon iconfont" href="#">专家</a>
+							<div class="mui-collapse-content">
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>张专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>邓专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>王专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>秦专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>陈专家</p>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-collapse">
+							<a class="mui-navigate-right icon iconfont" href="#">医生</a>
+							<div class="mui-collapse-content">
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>张专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>邓专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>王专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>秦专家</p>
+								<p data-value="" data-tags="" class="mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left"><input type="checkbox" /><strong><img src="../../images/head.jpg" /></strong>陈专家</p>
+							</div>
+						</li>
+					</ul>
+	        	</div>
+	        </div>
+        </div>
+	</div>
+</div>
+<script>
+	mui.init();
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+</script>
+</body>
+</html>

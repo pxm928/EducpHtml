@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>考勤2</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+	<!--一级联动通用样式-->
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+	<!--一级选择连动样式-->
+	<link href="../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+	<style type="text/css">
+		.mui-bar .mui-icon{ margin-top:0;}
+		.mui-bar-nav{ top:20px;}
+		.mui-bar-nav,.mui-bar{ box-shadow:0 0 0 #ccc}
+		.mui-bar-nav.mui-bar .mui-icon.mui-icon-left-nav{ font-size:1.4rem;}
+		#topPopover{height:8rem;}
+    	#topPopover .mui-table-view-cell{padding: 11px 10px;}
+    	.mui-table-view .school{ width:4rem; height: 1.4rem; color: #fff; line-height: 1.4rem; font-size: 0.8rem; text-align: center;margin: 0 auto; border-radius: 5px;}
+    	.mui-table-view .go{ background-color:#fe8084;}
+    	.mui-table-view .leave{ background-color:#60b6ff;}
+    	.time{ font-size:0.8rem;color: #806766;}
+    	.daka i{display:block;font-size:1.4rem;}
+    	.daka i.red{ color: #fe8084;}
+    	.daka i.blue{ color: #60b6ff;}
+    	.daka{text-align:center;font-size:0.8rem;color:#938584; padding-bottom: 10px;}
+    	.mui-table-view-cell a img{ border-radius: 4px;}
+	</style>
+	</head>
+	<body class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="statusTop"></div>
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="kaoqin2" class="mui-page">
+			<header class="mui-navbar-inner mui-bar mui-bar-nav" id="recipesTop">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-text-center mui-title">考勤</h1> 
+				<div class="icon-group">
+					<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe602;</a>
+				</div>
+			</header>
+			 <div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+					<div class="rili">
+						<img src="../../images/rili.jpg"  style="width:100%">
+					</div>
+					<div class="mui-table-view mui-grid-view">
+						<div class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+							<p href="javascript://" class=" go school">上学</p>
+							<span class="time">08:26:18 am</span>
+							<p class="daka">
+								<i class="icon iconfont red">&#xe64b;</i>
+								已打卡
+							</p>
+						</div>
+						<div class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#"><img src="../../images/default2.jpg" class="mui-media-object"></a>
+							<p href="javascript://" class="leave school">放学</p>
+							<span class="time">- - : - - :  - -</span>
+							<p class="daka">
+								<i class="icon iconfont blue">&#xe854;</i>
+								未打卡
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--单页面结束-->
+	<!--右上角弹出菜单-->
+	<div id="topPopover" class="mui-popover">
+		<div class="mui-popover-arrow"></div>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="addshipu.html"><i class="icon iconfont">&#xe60e;</i>请假</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="addcaipin.html"><i class="icon iconfont" style="font-size: 1rem;">&#xe64c;</i>请假列表</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="addcaipin.html"><i class="icon iconfont" style="font-size: 1rem;">&#xe64d;</i>统计</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.view.js "></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#kaoqin2'
+		});
+		 //滚动条
+   		mui('.mui-scroll-wrapper').scroll();
+		mui("#recipeslist").scroll();
+		var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else { //执行webview后退
+					oldBack();
+				}
+			};
+			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+			view.addEventListener('pageBeforeShow', function(e) {
+				//				console.log(e.detail.page.id + ' beforeShow');
+			});
+			view.addEventListener('pageShow', function(e) {
+				//				console.log(e.detail.page.id + ' show');
+			});
+			view.addEventListener('pageBeforeBack', function(e) {
+				//				console.log(e.detail.page.id + ' beforeBack');
+			});
+			view.addEventListener('pageBack', function(e) {
+				//				console.log(e.detail.page.id + ' back');
+			});
+		})(mui);
+		</script>
+</html>

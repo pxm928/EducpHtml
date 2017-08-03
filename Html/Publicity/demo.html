@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@charset "utf-8";
+	.ad_foot li { margin:0 auto 1em; font-size:1.8em; padding:15px; background:#FFF;}
+	.ad_foot li a {display:block;}
+	.ad_foot li .l {width:75px; height:75px; float:left; overflow:hidden;}
+	.ad_foot li .l img {width:75px; width:75px;}
+	.ad_foot li .r {width:78%; float:left; margin-left:30px; color:#666; overflow:hidden;}
+	.ad_foot li .r p {color:#999; font-size:1.2em; }
+	.ad_foot li .r span {font-size:0.8em;}
+	.ad_foot li .r i {font-style:normal;}
+	
+	.lazy-img, .lazy-finish{background-color:#f0eded;}
+	.page-list{font-size:20px;font-family: "Microsoft yahei";padding-left:17px;padding-top:30px;height:35px;border-bottom:1px solid #b5b5b5;display:none;}
+	.ad_foot{padding:15px 15px 0 15px;}
+
+/*底部推荐下在*/
+.ad_list{margin-top:2em;}.ad_list li {width:46%; background:none; padding:0; float:left;margin-bottom: 1em;}
+.ad_list li.r {float:right;}.ad_list li a img {width:100%; height:auto;}
+
+.ad_foot h3 {width:100%; height:48px; line-height:48px; background:#F9F5EC;}
+.ad_foot h3 a {display:inline-block; color:#444; width:50%; text-align:center; font-size:1.5em; height:48px; border-bottom:2px solid #FF9240;}
+.ad_foot h3 a.active {color:#FFF; background:#FF9240;}
+
+.magazine_1 li {
+width:100%;
+margin-bottom: 1em;
+font-size: 1.8em;
+padding: 15px;
+background: #FFF;}
+
+.magazine_1 li a {display:block;}
+.magazine_1 li .l {width: 75px;
+height: 75px;
+float: left;
+overflow: hidden;}
+.magazine_1 li .l img {width:75px; height:75px;}
+
+.magazine_1 li .r {width: 78%;
+float: left;
+margin-left: 30px;
+color: #666;
+overflow: hidden;}
+
+
+.magazine_1 li .r p {
+color: #999;
+font-size: 1.2em;}
+
+.magazine_1 li .r span {font-size:0.8em;}
+
+.ad_foot li .r i {font-style:normal;}
+
+
+/*宣传页面*/
+body{font-family: 'Helvetica Neue',Helvetica,sans-serif;}
+.page-con{background-size: cover; height: 909px; background-position: 50% 50%;}
+.xq-logo{ position:absolute;width:100%;left:0;bottom:0; display: table;}
+.xq-logo img{text-align: center; display: table-cell;width:6rem; margin:0 auto 100px;}
+.star1{ position: absolute;left: 1rem;top:1rem; width:1.5rem; height:1.5rem; opacity:1;}
+.star2{ position: absolute;right: 1rem;top:1rem; width:0.6rem; height:0.6rem;-webkit-animation:1s ease infinite  zoomIn; opacity: 0.6;}
+.star3{ position: absolute;left:4rem;top:5rem;width:0.6rem; height: 0.8rem;-webkit-animation:1s ease 0.6s infinite  zoomIn; opacity: 0.6;}
+.star4{ position: absolute;left:6rem;top:3rem; width:1rem; height:0.5rem; opacity:0.5;}
+.star5{ position: absolute;left:8rem;top:5rem; width:1rem; height:1rem; opacity:0.6;}
+.star6{ position: absolute;right:3.5rem;top:2.5rem; width:0.5rem; height:0.5rem;-webkit-animation:1s ease 1s infinite  zoomIn; opacity: 0.6;}
+.star7{ position: absolute;right:8rem;top:5rem; width:1rem; height:1rem; opacity:0.6;}
+/*zs*/
+.main{ width:90%; margin:0 auto; height:100%; position: relative; z-index: 1;}
+.title{ width:80%;height:4rem; text-align:center;overflow: hidden; position:relative; left: 10%;top:5%;-webkit-animation:title 0.7s ease 0.2s 1 ;}
+.title img{ width:100%; height:100%;position: absolute;left:0; top:0;text-align: center;z-index: 0;}
+.title span{ position: relative;z-index:1;line-height: 4rem; font-size:1.5rem;}
+.title span.black{ color:#302c37;}
+.title span.white{ color:#fff;}
+.title span.blue{color:#579eed;}
+.zs-main{position: relative;left:0%;top:0;padding:20px; height:80%;}
+.zs-bg{ position: absolute; left:0;top:0;width:100%;}
+.zs-text{width:85%;position:relative;left:5.25%;padding-top:20%;z-index:2;}
+.zs-text p{ margin-bottom:6px;}
+.zs-text label{background-color:#fdde5f;color:#302c37;border-radius:10px; padding: 3px;}
+.zs-text span{line-height:28px;}
+.zs-man{ position: absolute; right:2rem;bottom:3rem;width:8rem;}
+/*jshj*/
+.jxhj-main{position: relative;left:0%;top:0;padding:20px; height:80%;}
+.jxhj-main div{ width:12rem; height: 6rem;overflow:hidden; background-color: #fff; padding: 5px;border-radius: 3px;}
+.jxhj-main div img{width:100%;max-height:100%;}
+.img1{ -webkit-transform: rotate(25deg); position:absolute;right:0rem; bottom: 15%; z-index: 6;}
+.img2{ -webkit-transform: rotate(-15deg); position:absolute;left:-0.2rem;bottom:20%;z-index: 5;}
+.img3{ -webkit-transform: rotate(-25deg); position:absolute;right:-1rem;bottom: 28%;z-index: 4;}
+.img4{ -webkit-transform: rotate(5deg);position:absolute;left:-0.2rem;bottom:35%;z-index: 3;}
+.img5{ -webkit-transform: rotate(5deg); position: absolute;right:0rem; bottom: 50%;z-index: 2;}
+.img6{ -webkit-transform: rotate(-15deg); position:absolute;left:-0.5rem;bottom: 55%;z-index: 1;}
+/*szsz*/
+.sz-main{position: relative;left:0%;top:0;padding:20px;height:80%;}
+.sz-text{ line-height:24px; color: #fff;margin-top:40px;text-align: justify;}
+.sz-img{position: relative; z-index: 1; float: left; width:5rem; height: 5rem;margin:0 2.8rem 0.5rem 0;overflow: hidden;border-radius:5rem; background:rgba(255,255,255,0.5); padding: 0.4rem;}
+.sz-img img{ width:100%;height:100%;border-radius:5rem;}
+.sz-photos{margin:1.5rem -2.5rem 1.5rem 0rem;overflow:hidden;position:relative;}
+.sz-man{ position: absolute;left:20%;bottom:25%;width:8rem;z-index:0;}
+/*jxhj*/
+.jx_img{width:100%; text-align: center; margin:80px auto 0;}
+.jx_img img{ width:80%;}
+/*办学宗旨*/
+.bx_img{width:100%; text-align: center; position: absolute;left: 0;bottom:80px;border-bottom: #222222 1px solid;}
+.bx_img img{ width:80%;}
+/*动画地方*/
+.things{ position: relative;z-index:0;}
+.bird1{ position: fixed; left:1rem; top:2.5rem;width:2rem;-webkit-animation:bird1 3s linear  infinite;-ms-animation:bird1 3s linear  infinite;}
+.bird2{ position: fixed; left:2rem; top:5rem;width:4rem;-webkit-animation:bird1 3.5s linear  infinite;-ms-animation:bird1 3.5s linear  infinite;}
+.aircraft{ position: fixed; right:2rem; top:10rem;width:3rem;-webkit-animation:aircraft 2.5s  linear;-ms-animation:bird1 3.5s linear  infinite;}
+.cloud2{ position: fixed; right:2rem; top:0.2rem;width:4rem;-webkit-animation:cloudAnimate 90s linear  infinite;-ms-animation:cloudAnimate 90s linear  infinite;}
+.cloud1{ position: fixed; left:1rem; top:11rem;width:2rem;-webkit-animation:cloudAnimate2 90s linear  infinite;-ms-animation:cloudAnimate2 90s linear  infinite;}
+.cloud3{ position: fixed; right:1rem;top:18rem;width:3rem; opacity: 0.6;-webkit-animation:cloudAnimate 60s linear  infinite;-ms-animation:cloudAnimate 60s linear  infinite;}
+@-webkit-keyframes cloudAnimate{
+	from{-webkit-transform:translate(0);}
+	to{-webkit-transform:translate(-800px);}
+}
+@-ms-keyframes cloudAnimate{
+	from{-webkit-transform:translate(0);}
+	to{-webkit-transform:translate(-800px);}
+}
+@-webkit-keyframes cloudAnimate2{
+	-webkit-from{-webkit-transform:translate(0);}
+	-webkit-to{-webkit-transform:translate(800px);}
+}
+@ms-keyframes cloudAnimate2{
+	-webkit-from{-webkit-transform:translate(0);}
+	-webkit-to{-webkit-transform:translate(800px);}
+}
+@-webkit-keyframes bird1{
+	0{-webkit-transform:translate(0,0);}
+	25%{-webkit-transform:translate(0,-5px);}
+	40%{-webkit-transform:translate(0,-2px);}
+	50%{-webkit-transform:translate(0,0px);}
+	60%{-webkit-transform:translate(0,2px);}
+	75%{-webkit-transform:translate(0,5px);}
+	100%{-webkit-transform:translate(0,0);}
+}
+
+@-ms-keyframes bird1{
+	0{-webkit-transform:translate(0,0);}
+	25%{-webkit-transform:translate(0,-5px);}
+	40%{-webkit-transform:translate(0,-2px);}
+	50%{-webkit-transform:translate(0,0px);}
+	60%{-webkit-transform:translate(0,2px);}
+	75%{-webkit-transform:translate(0,5px);}
+	100%{-webkit-transform:translate(0,0);}
+}
+@-webkit-keyframes aircraft{
+	0%{ -webkit-transform:translate(200px,400px);}
+	100%{ -webkit-transform:translate(0,0);}
+}
+@keyframes aircraft{
+	0%{ transform:translate(200px,400px);}
+	100%{ transform:translate(0,0);}
+}
+@-ms-keyframes aircraft{
+	0%{ -webkit-transform:translate(200px,400px);}
+	100%{ -webkit-transform:translate(0,0);}
+}
+@-webkit-keyframes title{
+	from{-webkit-transform:translate(0,-200px);}
+	to{-webkit-transform:translate(0,0);}
+}
+
+@-ms-keyframes title{
+	from{-webkit-transform:translate(0,-200px);}
+	to{-webkit-transform:translate(0,0);}
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform:translate3d(100%, 0, 0);
+    -webkit-transform:translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-ms-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -ms-transform:translate3d(100%, 0, 0);
+    -webkit-transform:translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform:translate3d(-100%, 0, 0);
+    -webkit-transform:translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-ms-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -ms-transform:translate3d(-100%, 0, 0);
+    -webkit-transform:translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform:translate3d(0, 100%, 0);
+    -webkit-transform:translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-ms-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -ms-transform:translate3d(0, 100%, 0);
+    -webkit-transform:translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -webkit-transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -ms-transform: scale3d(.3, .3, .3);
+    -webkit-transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.textAnimate{-webkit-animation:fadeInRight 1s ease 0.6s 1;}
+.botImgAnimate{-webkit-animation:fadeInUp 1s ease 0.6s 1;}
+.sz-img{-webkit-animation:1.2s ease 0.6s 1  zoomIn;-ms-animation:1.2s ease 0.6s 1  zoomIn;}
+.img1{-webkit-animation:0.5s ease 0.2s 1  fadeIn;-ms-animation:0.5s ease 0.2s 1  fadeIn;}
+.img2{-webkit-animation:0.5s ease 0.4s 1  fadeIn;-ms-animation:0.5s ease 0.4s 1  fadeIn;}
+.img3{-webkit-animation:0.5s ease 0.6s 1  fadeIn;}
+.img4{-webkit-animation:0.5s ease 0.8s 1  fadeIn;}
+.img5{-webkit-animation:0.5s ease 1s 1  fadeIn;}
+.img6{-webkit-animation:0.5s ease 1.2s 1  fadeIn;}
+
+.zs-text1{-webkit-animation:0.5s ease 0.2s 1  fadeInLeft;}
+.zs-text2{-webkit-animation:0.5s ease 0.4s 1  fadeInRight;}
+.zs-text3{-webkit-animation:0.5s ease 0.6s 1  fadeInLeft;}
+.zs-text4{-webkit-animation:0.5s ease 0.8s 1  fadeInRight;}
+.zs-text5{-webkit-animation:0.5s ease 1s 1  fadeInLeft;}
+.zs-text6{-webkit-animation:0.5s ease 1.2s 1  fadeInRight;}
+.zs-text7{-webkit-animation:0.5s ease 1.4s 1  fadeInLeft;}
+.zs-man{-webkit-animation:1.2s ease 1.4s 1  fadeIn;}
+
+		</style>
+	</head>
+	<body>
+		<!--办学宗旨-->
+				<div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list">
+					<div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover" style="background:#9ee0e2;">
+						<div class="main">
+							<div class="title">
+								<span class="white">办学宗旨</span>
+								<img src="../../images/xuanchuan/banxue-title.png" />
+							</div>
+							<div class="sz-main">
+								<div class="sz-text textAnimate">
+									全面贯彻教育方针，面向全体学生，全面落实素质教育；实现“教育目标的最终是创新”的理念，使学生学会生活、学会学习。
+								</div>
+								<div class="bx_img botImgAnimate">
+									<img src="../../images/xuanchuan/banxue-img.png" />
+								</div>
+							</div>
+						</div>
+						<div class="things">
+							<img src="../../images/xuanchuan/bird.jpg" class="bird1" />
+							<img src="../../images/xuanchuan/bird.jpg" class="bird2" />
+							<img src="../../images/xuanchuan/cloud1.jpg" class="cloud1" />
+							<img src="../../images/xuanchuan/cloud2.jpg" class="cloud2" />
+							<img src="../../images/xuanchuan/cloud2.jpg" class="cloud3" />
+							<img src="../../images/xuanchuan/aircraft.png" class="aircraft" />
+						</div>	
+					</div>
+				</div>
+				
+	</body>
+</html>

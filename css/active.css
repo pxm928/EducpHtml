@@ -1,0 +1,35 @@
+body{ background-color: #ccc;}
+.active{padding: 0.4rem;background-color: #fff; margin-bottom: 0.5rem;}
+#active{ margin-top:5px}
+.leyuanName{height: 1.2rem; position: absolute;left: 0;bottom: 0;background-color: rgba(0,0,0,0.45);width:100%; text-align: center; font-size: 0.6rem;line-height: 1.2rem; color: #fff;}
+.active a i{ color: #fff; font-size: 0.7rem;}
+.active a span{line-height: 1rem; font-size: 0.75rem; color: #fff;margin-right: 0.5rem;}
+.leyuanName p{ margin:0; padding: 0;float: right;}
+.active h6 a{ font-size: 0.7rem; color: #7f6767; line-height: 1rem;}
+.active h5 a{ font-size: 0.8rem; color: #7f6767; line-height: 1.5rem;}
+.active .mui-table-cell{color:#c3b2b2;}
+.mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) label{ line-height:normal;}
+.active label.mm{
+    display: block;
+    width:6rem;
+    padding: 0.1rem 0.5rem;
+    text-align: center;
+    font-size:0.6rem;
+    color:#fff;
+    position: absolute;
+    background:#ed474c;
+    top:0.5rem;right:-1.9rem;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.active label.ing{
+	
+    background:#ed474c;
+}
+.active label.end{
+    background:#9b9b9b;
+}
+.active .act-filed{ width:3.5rem;text-align:Justify;text-justify:inter-ideograph;}
+.actDetail{ text-indent:1rem; color: #7f6767;}
+.act-text{ color: #7f6767;}
+.actDiv{ margin-bottom:0.5rem;}
+.actDetail{ border-top:#f3eded 1px solid; padding-top: 0.5rem;}
+.pinglun .h4-title{font-weight: normal; border-bottom: #ebe2e3 1px solid; height:2rem; line-height: 2rem;color: #543232;}
+

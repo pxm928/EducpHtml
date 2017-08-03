@@ -1,0 +1,24 @@
+.bg{width:100%;position:fixed;left:0;top:0;z-index: 0;}
+.userInfo{ position: relative;z-index:1;}
+.userImg{float: left;margin-right:0.5rem; width:4rem;height: 4rem;border-radius: 4rem; overflow: hidden;}
+.userImg img{ max-width:100%;}
+.user-head{ margin-left:2rem;margin-top:2.5rem;}
+.user-r{color: #fff; overflow: hidden;}
+.user-r h5{margin-top:0.8rem; margin-bottom: 0.5rem;font-size: 1.5rem;font-weight: bold;}
+.user-r h5,.user-r h6{color:#fff;}
+.user-text{ color: #f9e9e6; margin-top:0.4rem}
+.mui-card,.mui-card .mui-table-view{ background: none;box-shadow: none;}
+.mui-card .mui-table-view-cell>a:not(.mui-btn){text-indent: 1rem; color: #fee9e6;font-size: 1rem;}
+.mui-card .mui-table-view-cell>a:not(.mui-btn).mui-active{background:none;}
+.mui-card .mui-navigate-right:after,.mui-card .mui-push-left:after,.mui-card .mui-push-right:after{font-size: 1.3rem; color: #fee9e6;}
+.mui-card .mui-table-view-cell:after{ background-color: #fee9e6;}
+.userInfoBot .set{color: #fff; font-size: 0.8rem; margin-top:0.4rem;display: block;}
+.userInfoBot .set i{ font-size: 1rem;padding-right:0.3rem;}
+.userInfoBot .set i:active,.userInfoBot .set:active{ color: #ffb0af;}
+.userInfoBot{width:90%;position: fixed;left:1rem;bottom:0rem;}
+.another i{float: left;color: #fff;font-size:2rem;margin:0;padding: 0; margin-top:-0.5rem}
+.another h6,.another .area{color:#fff;font-size:0.7rem;margin:0; margin-bottom: 0.2rem;}
+.another h6{ font-size: 0.8rem;margin-top:0.2rem;}
+.ano-r{float: left; margin-left: 0.4rem;}
+.mui-card{ margin:2rem 0 0;}
+.mui-card .mui-table-view-cell:after{left:0;}

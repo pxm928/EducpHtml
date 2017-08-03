@@ -1,0 +1,57 @@
+/*动态*/
+#slider{ margin-top:0px;}
+.mui-slider .mui-slider-group .mui-slider-item>a{ margin: 0.4rem 0rem;}
+.mui-slider-indicator{text-align: center; bottom: 0.5rem;}
+.mui-slider-indicator .mui-indicator{ box-shadow: none; width:0.5rem; height: 0.5rem; background: #fff;}
+.mui-slider-indicator .mui-active.mui-indicator{ background-color: #ff9a10;}
+.title {margin: 2rem 1.5rem 1rem;color: #6d6d72;font-size: 1.5rem;}
+ .mui-control-content {text-align: center;}
+/*值日生/今日照片*/
+.today-list{ background: #fff; border-radius:5px; overflow: hidden;height:4.25rem;}
+.todayBox .mui-col-xs-6:nth-child(2) .today-list{background:none}
+.today-list p{ width:3.5rem; float: left;}
+.today-list p a{color: #867070;font-size: 0.6rem;line-height: 0.7rem; margin: 0.3rem 0.4rem; display: block; position: relative; width:2.9rem; height:2.9rem;}
+.today-list p img{ width:100%; height:100%;border-radius: 2.9rem;}
+.today-list p a span{ position: absolute; right: 0;bottom: 0; z-index: 2; text-align: center; width:1rem; height: 1rem;}
+.today-list p a span i{ font-size: 1rem;}
+.today-list p a span b{ text-align: center;display:block; position: absolute; left: 0;bottom: 2px; width:100%;color: #fff;line-height: 1rem;}
+.today-list p:nth-child(1) a span i{ color: #ff7171;}
+.today-list p:nth-child(2) a span i{ color: #ffaf3d;}
+.today-list strong{ position: absolute;right:-0.75rem;top:0.65rem;border-bottom: 1.1rem solid #38abf4; 
+border-left: 1rem solid transparent; 
+border-right: 1.2rem solid transparent; 
+height: 0px; 
+width: 4.2rem;color: #fff;font-size: 0.6rem; 
+-moz-transform: rotate(48deg); 
+-webkit-transform: rotate(48deg); 
+-ms-transform: rotate(48deg); 
+-o-transform: rotate(48deg);}
+.today-img{width:100%; height:4.25rem;display:block;}
+.today-img img{ width:100%;height:100%; border-radius: 5px;}
+.todayImgBox strong{ border-bottom: 1.1rem solid #ed474c;right: -1.2rem;font-size: 0.4rem;}
+/*乐园*/
+.leyuanName{height: 1.5rem; position: absolute;left: 0;bottom: 0;background-color: rgba(0,0,0,0.75);width:100%; text-align: center; font-size: 0.6rem;line-height: 1.5rem; color: #fff;}
+.leyuanList a i{ color: #ff7f83; font-size: 1.5rem;}
+.leyuanList a span{ text-align: center;line-height: 1rem;display: block; font-size: 0.75rem; color: #7f6767;}
+.mui-grid-view.mui-grid-9{ background-color: #fff; border-top:none;border-bottom:none;}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{border-bottom-color: #ebe2e2;border-right-color: #ebe2e2;}
+/*知识*/
+.zhishi-list{ background-color: #fff;}
+.zhishi-fenlei a i {color: #ff7f83;font-size: 1.8rem;}
+.zhishi-fenlei a span{ text-align: center;line-height: 1rem;display: block; font-size: 0.75rem;color: #7f6767;}
+.zhishi-fenlei .mui-grid-view.mui-grid-9 .mui-table-view-cell{ border: none; padding: 11px 0;}
+.zhishi-fenlei .mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn){border-right:#ebe2e2 1px solid;padding: 0 15px;}
+.zhishi-fenlei .mui-grid-view.mui-grid-9 .mui-table-view-cell:last-child>a{border-right: none;}
+.zhishi-list .mui-table-view .mui-media-object{ max-width:5rem;height:3.8rem;line-height: 3.8rem;border:#ff7f83 1px solid;}
+.zhishi-list p.new-title{width:12rem;height:2.6rem;padding-bottom: 0.2rem; overflow: hidden; font-size:0.75rem; color: #7f6767;/*border-bottom: #f4f0f0 1px solid;*/}
+.zhishi-list .mui-table-view-cell>a:not(.mui-btn){white-space:normal;text-align: left;}
+.zhishi-list .new-time{ margin-top:0.3rem}
+.zhishi-list .new-time,.zhishi-list .new-time span{ color: #c3b2b2;font-size: 0.6rem; line-height:1.1rem;}
+.zhishi-list .new-time img{width:2.5rem; height:1rem; margin-right: 1rem;float: left; margin-top:0;2rem}
+.zhishi-list .new-time span{ margin-right: 1rem;}
+.zhishi-list li{ border-bottom: #e5e4e4 1px solid;padding-bottom: 0.6rem;}
+.zhishi-list .new2Name{font-size:0.75rem; color: #7f6767; text-align: left;margin-left: -5px;margin-right: -10px;}
+.zhishi-list .mui-table-view.mui-grid-view{ margin:0.4rem 0; padding: 0 0 0 0;}
+.zhishi-list .mui-table-view.mui-grid-view li.mui-table-view-cell {padding: 0 1px;margin:0px 0 1px;}
+.zhishi-list .mui-table-view.mui-grid-view li.mui-table-view-cell>a:not(.mui-btn){padding: 0;margin:0; font-size:0;}
+.zhishi-list .mui-table-view::before,.zhishi-list .mui-table-view::after{background: none;}

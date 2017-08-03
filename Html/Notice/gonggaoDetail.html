@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../css/ggDetail.css" rel="stylesheet"/>
+    <!--表情包-->
+    <link href="../../css/biaoqing.css" rel="stylesheet"/>
+    <style type="text/css">
+    	#topPopover{height:12rem}
+    	#topPopover .mui-table-view-cell{ padding: 11px 10px;}
+    </style>
+</head>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/jquery_min.js"></script>
+<script src="../../js/biaoqing.js"></script>
+<body>
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <div class="mui-inner-wrap">
+    	<div class="statusTop"></div>  
+        <div class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-title">通知详情</h1>
+				<div class="icon-group">
+					<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe630;</a>
+					</div>
+			</header>
+	        <div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+	        		<!--<div class="ggDetail">
+	        			此处是公告详情内容豆腐块的客观规律他如果客人过来了个； 丰富了两天看过了个公告详情内容来了个； 丰富了两天看过了个.
+	        			<div class="gg-field">
+	        				<span class="mui-pull-right">班级</span>
+	        				<p><i class="icon iconfont">&#xe62d; </i>14：30</p>
+	        			</div>
+	        		</div>-->
+	        		<div class="active-list" style="border-bottom:1px solid #eee;">
+		        		<div class="mui-table-view">
+			        		<div class="mui-table-view-cell mui-media">
+			        			<a href="#bottomPopover" class="miu-xiala"><i class="icon iconfont mui-xiajiantou">&#xe60a;</i></a>
+								<a href="javascript:;" class="">
+									<img src="../../images/small-img1.jpg" class="mui-media-object mui-pull-left">
+									<div class="mui-media-body  mui-text-left">
+										<h4>张俊杰<i>|</i>小班<em>【公告 】</em></h4>
+										<span class="time">发布时间 : 2016.08.08</span>
+									</div>
+								</a>
+								<p class="active-text mui-text-left">张俊杰动态张俊六一儿童节少儿绘本_沪江网店童六一送礼张俊杰动态张俊六一儿童节</p>
+								<div class="mui-table-view mui-grid-view" style="padding:0;">
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+								</div>
+								<div class="dianzan-pinglun mui-text-right">
+									<span><i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>赞</span>
+									<b>|</b>
+									<span><i class="icon iconfont">&#xe609;</i>评论</span>
+								</div>
+			        		</div>
+		        		</div>
+		        		<div class="comment-list comment-bordertop">
+			        		<p class="com-head">
+								<i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>
+								<a href="javascript://">张老师</a><a href="javascript://">陈老师</a><a href="javascript://">李老师</a>
+							</p>
+						</div>
+	        		</div>
+	        		
+	        		<div class="mui-bar-tab gg-switch">
+	        			<a style="width:62%" class="mui-tab-item mui-active" href="#pinglun"><em>评论0</em></a>
+		        		<a style="width:18%"class="mui-tab-item" href="#yes-look"><em>已看1</em></a>
+		        		<b>|</b>
+		        		<a class="mui-tab-item" href="#no-look"><em>未看1</em></a>
+		        		<span></span>
+	        		</div>
+	        		<div class="mui-clearfix"></div>
+	        		<div class="switchDiv">
+	        			<div class="mui-control-content pinglun mui-active"id="pinglun">
+	        				<span class="no" style="display: none;">还没人评论</span>
+	        				<div class="gonggao active-list">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media nopaddion-top">
+										<div class="comment-list mui-text-left nomargin-top">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right" style="color:#875656;">回复</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/head.jpg" /></strong>张老师
+													</a>
+													<div class="mui-media-body mui-text-left">
+														<div class="he">12：20</div>
+														<div>宝宝好棒，吹拉弹唱样样精通！吹拉弹唱样样精通吹拉弹唱样样精通</div>
+														<div class="me">
+															<a href="javascript:;">
+																<strong><img src="../../images/img-list1.jpg" /></strong>陈麻麻
+															</a>
+															<b>回复</b>
+															<a href="javascript:;">张老师</a>
+															<div class="mui-media-body mui-text-left">
+																蝴蝶飞过； 的福利来了发到了法国；蝴蝶飞过； 的福利来了发到了法国；
+															</div>
+														</div>
+														<div class="he">
+															<a href="javascript:;">
+																<strong><img src="../../images/head.jpg" /></strong>张老师
+															</a>
+															<b>回复</b>
+															<a href="javascript:;">陈麻麻</a>
+															<div class="mui-media-body mui-text-left">
+																今天宝宝表现不错呢</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell mui-media nopaddion-top">
+										<div class="comment-list mui-text-left nomargin-top">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：20</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/img-list2.jpg" /></strong>李老师
+													</a>
+													<div class="mui-media-body mui-text-left">
+														<div class="he">宝宝好棒，吹拉弹唱样样精通！吹拉弹唱样样精通吹拉弹唱样样精通</div>
+														<div class="me">
+															<a href="javascript:;">
+																<strong><img src="../../images/img-list1.jpg" /></strong>陈麻麻
+															</a>
+															<b>回复</b>
+															<a href="javascript:;">张老师</a>
+															<div class="mui-media-body mui-text-left">
+																蝴蝶飞过； 的福利来了发到了法国；蝴蝶飞过； 的福利来了发到了法国；
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>	
+								</ul>
+							</div>
+						</div>
+						<div class="mui-control-content yes-look"id="yes-look">
+							<div class="gonggao active-list">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<div class="comment-list mui-text-left">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：20</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/head.jpg" /></strong>秦玄玉（管理员）
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<div class="comment-list mui-text-left">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：30</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/img-list1.jpg" /></strong>陈丽（家长）
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<div class="comment-list mui-text-left">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：30</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/apple-touch-icon-precomposed.png" /></strong>东民（家长）
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mui-control-content no-look" id="no-look">
+							<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined"id='confirmBtn'>
+								提醒未看成员
+							</button>
+							<div class="gonggao active-list">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<div class="comment-list mui-text-left">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：20</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/head.jpg" /></strong>秦玄玉（管理员）
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<div class="comment-list mui-text-left">
+											<div class="com-conment">
+												<div class="com-list">
+													<span class="mui-pull-right">12：30</span>
+													<a href="javascript:;">
+														<strong><img src="../../images/img-list1.jpg" /></strong>陈丽（家长）
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+	        		</div>
+				</div>
+	        </div>
+        	<!--<div class="gg-foot-box">
+        		<div class="gg-foot">
+	        		<span style="display: none;"><i class="icon iconfont">&#xe631;</i></span>
+	        		<span><i class="icon iconfont">&#xe643;</i></span>
+	        		<div class="mui-popup-text"><textarea entry="" placeholder="添加评论..." maxlength="100"></textarea></div>
+	        		<a>发送</a>
+	        	</div>
+	        	<div class="biaoqing">
+	        		<article id="form_article" onkeydown="myInput.listen(this, event);" contenteditable="true">
+					</article>
+						<div class="page_emotion box_swipe" id="page_emotion" style="visibility: visible;">
+							<dl id="list_emotion" class="list_emotion pt_10" style="list-style: outside none none;margin:0;transition-duration: 500ms; transform: translate3d(0, 0px, 0px);">
+								<div style="display: table-cell; vertical-align: top;">
+									<dd><span data-key="0_0_/::)" style="background-position:0px 0;"></span></dd>
+									<dd><span data-key="1_0_/::~" style="background-position:-24px 0;"></span></dd>
+									<dd><span data-key="2_0_/::B" style="background-position:-48px 0;"></span></dd>
+									<dd><span data-key="3_0_/::|" style="background-position:-72px 0;"></span></dd>
+									<dd><span data-key="4_0_/:8-)" style="background-position:-96px 0;"></span></dd>
+									<dd><span data-key="5_0_/::&lt;" style="background-position:-120px 0;"></span></dd>
+									<dd><span data-key="6_0_/::$" style="background-position:-144px 0;"></span></dd>
+									<dd><span data-key="7_0_/::X" style="background-position:-168px 0;"></span></dd>
+									<dd><span data-key="8_0_/::Z" style="background-position:-192px 0;"></span></dd>
+									<dd><span data-key="9_0_/::'(" style="background-position:-216px 0;"></span></dd>
+									<dd><span data-key="10_0_/::-|" style="background-position:-240px 0;"></span></dd>
+									<dd><span data-key="11_0_/::@" style="background-position:-264px 0;"></span></dd>
+									<dd><span data-key="12_0_/::P" style="background-position:-288px 0;"></span></dd>
+									<dd><span data-key="13_0_/::D" style="background-position:-312px 0;"></span></dd>
+									<dd><span data-key="14_0_/::O" style="background-position:-336px 0;"></span></dd>
+									<dd><span data-key="15_0_/::(" style="background-position:-360px 0;"></span></dd>
+									<dd><span data-key="16_0_/::+" style="background-position:-384px 0;"></span></dd>
+									<dd><span data-key="17_0_/:&ndash;b" style="background-position:-408px 0;"></span></dd>
+									<dd><span data-key="18_0_/::Q" style="background-position:-432px 0;"></span></dd>
+									<dd><span data-key="19_0_/::T" style="background-position:-456px 0;"></span></dd>
+									<dd><span data-key="-1_-1_/:del" class="del"></span></dd>
+								</div>
+								<div style="width: 1264px; display: table-cell; vertical-align: top;">
+									<dd><span data-key="20_1_/:,@P" style="background-position:-480px 0;"></span></dd>
+									<dd><span data-key="21_1_/:,@-D" style="background-position:-504px 0;"></span></dd>
+									<dd><span data-key="22_1_/::d" style="background-position:-528px 0;"></span></dd>
+									<dd><span data-key="23_1_/:,@o" style="background-position:-552px 0;"></span></dd>
+									<dd><span data-key="24_1_/::g" style="background-position:-576px 0;"></span></dd>
+									<dd><span data-key="25_1_/:|-)" style="background-position:-600px 0;"></span></dd>
+									<dd><span data-key="26_1_/::!" style="background-position:-624px 0;"></span></dd>
+									<dd><span data-key="27_1_/::L" style="background-position:-648px 0;"></span></dd>
+									<dd><span data-key="28_1_/::&gt;" style="background-position:-672px 0;"></span></dd>
+									<dd><span data-key="29_1_/::,@" style="background-position:-696px 0;"></span></dd>
+									<dd><span data-key="30_1_/:,@f" style="background-position:-720px 0;"></span></dd>
+									<dd><span data-key="31_1_/::-S" style="background-position:-744px 0;"></span></dd>
+									<dd><span data-key="32_1_/:?" style="background-position:-768px 0;"></span></dd>
+									<dd><span data-key="33_1_/:,@x" style="background-position:-792px 0;"></span></dd>
+									<dd><span data-key="34_1_/:,@@" style="background-position:-816px 0;"></span></dd>
+									<dd><span data-key="35_1_/::8" style="background-position:-840px 0;"></span></dd>
+									<dd><span data-key="36_1_/:,@!" style="background-position:-864px 0;"></span></dd>
+									<dd><span data-key="37_1_/:!!!" style="background-position:-888px 0;"></span></dd>
+									<dd><span data-key="38_1_/:xx" style="background-position:-912px 0;"></span></dd>
+									<dd><span data-key="39_1_/:bye" style="background-position:-936px 0;"></span></dd>
+									<dd><span data-key="-1_-1_/:del" class="del"></span></dd>
+								</div>
+								<div style="width: 1264px; display: table-cell; vertical-align: top;">
+									<dd><span data-key="40_2_/:wipe" style="background-position:-960px 0;"></span></dd>
+									<dd><span data-key="41_2_/:dig" style="background-position:-984px 0;"></span></dd>
+									<dd><span data-key="42_2_/:handclap" style="background-position:-1008px 0;"></span></dd>
+									<dd><span data-key="43_2_/:&amp;-(" style="background-position:-1032px 0;"></span></dd>
+									<dd><span data-key="44_2_/:B-)" style="background-position:-1056px 0;"></span></dd>
+									<dd><span data-key="45_2_/:&lt;@" style="background-position:-1080px 0;"></span></dd>
+									<dd><span data-key="46_2_/:@&gt;" style="background-position:-1104px 0;"></span></dd>
+									<dd><span data-key="47_2_/::-O" style="background-position:-1128px 0;"></span></dd>
+									<dd><span data-key="48_2_/:&gt;-|" style="background-position:-1152px 0;"></span></dd>
+									<dd><span data-key="49_2_/:P-(" style="background-position:-1176px 0;"></span></dd>
+									<dd><span data-key="50_2_/::'|" style="background-position:-1200px 0;"></span></dd>
+									<dd><span data-key="51_2_/:X-)" style="background-position:-1224px 0;"></span></dd>
+									<dd><span data-key="52_2_/::*" style="background-position:-1248px 0;"></span></dd>
+									<dd><span data-key="53_2_/:@x" style="background-position:-1272px 0;"></span></dd>
+									<dd><span data-key="54_2_/:8*" style="background-position:-1296px 0;"></span></dd>
+									<dd><span data-key="55_2_/:pd" style="background-position:-1320px 0;"></span></dd>
+									<dd><span data-key="56_2_/:&lt;W&gt;" style="background-position:-1344px 0;"></span></dd>
+									<dd><span data-key="57_2_/:beer" style="background-position:-1368px 0;"></span></dd>
+									<dd><span data-key="58_2_/:basketb" style="background-position:-1392px 0;"></span></dd>
+									<dd><span data-key="59_2_/:oo" style="background-position:-1416px 0;"></span></dd>
+									<dd><span data-key="-1_-1_/:del" class="del"></span></dd>
+								</div>
+								<div style="width: 1264px; display: table-cell; vertical-align: top;">
+									<dd><span data-key="60_3_/:coffee" style="background-position:-1440px 0;"></span></dd>
+									<dd><span data-key="61_3_/:eat" style="background-position:-1464px 0;"></span></dd>
+									<dd><span data-key="62_3_/:pig" style="background-position:-1488px 0;"></span></dd>
+									<dd><span data-key="63_3_/:rose" style="background-position:-1512px 0;"></span></dd>
+									<dd><span data-key="64_3_/:fade" style="background-position:-1536px 0;"></span></dd>
+									<dd><span data-key="65_3_/:showlove" style="background-position:-1560px 0;"></span></dd>
+									<dd><span data-key="66_3_/:heart" style="background-position:-1584px 0;"></span></dd>
+									<dd><span data-key="67_3_/:break" style="background-position:-1608px 0;"></span></dd>
+									<dd><span data-key="68_3_/:cake" style="background-position:-1632px 0;"></span></dd>
+									<dd><span data-key="69_3_/:li" style="background-position:-1656px 0;"></span></dd>
+									<dd><span data-key="70_3_/:bome" style="background-position:-1680px 0;"></span></dd>
+									<dd><span data-key="71_3_/:kn" style="background-position:-1704px 0;"></span></dd>
+									<dd><span data-key="72_3_/:footb" style="background-position:-1728px 0;"></span></dd>
+									<dd><span data-key="73_3_/:ladybug" style="background-position:-1752px 0;"></span></dd>
+									<dd><span data-key="74_3_/:shit" style="background-position:-1776px 0;"></span></dd>
+									<dd><span data-key="75_3_/:moon" style="background-position:-1800px 0;"></span></dd>
+									<dd><span data-key="76_3_/:sun" style="background-position:-1824px 0;"></span></dd>
+									<dd><span data-key="77_3_/:gift" style="background-position:-1848px 0;"></span></dd>
+									<dd><span data-key="78_3_/:hug" style="background-position:-1872px 0;"></span></dd>
+									<dd><span data-key="79_3_/:strong" style="background-position:-1896px 0;"></span></dd>
+									<dd><span data-key="-1_-1_/:del" class="del"></span></dd>
+								</div>
+								<div style="width: 1264px; display: table-cell; vertical-align: top;">
+									<dd><span data-key="80_4_/:weak" style="background-position:-1920px 0;"></span></dd>
+									<dd><span data-key="81_4_/:share" style="background-position:-1944px 0;"></span></dd>
+									<dd><span data-key="82_4_/:v" style="background-position:-1968px 0;"></span></dd>
+									<dd><span data-key="83_4_/:@)" style="background-position:-1992px 0;"></span></dd>
+									<dd><span data-key="84_4_/:jj" style="background-position:-2016px 0;"></span></dd>
+									<dd><span data-key="85_4_/:@@" style="background-position:-2040px 0;"></span></dd>
+									<dd><span data-key="86_4_/:bad" style="background-position:-2064px 0;"></span></dd>
+									<dd><span data-key="87_4_/:lvu" style="background-position:-2088px 0;"></span></dd>
+									<dd><span data-key="88_4_/:no" style="background-position:-2112px 0;"></span></dd>
+									<dd><span data-key="89_4_/:ok" style="background-position:-2136px 0;"></span></dd>
+									<dd><span data-key="90_4_/:love" style="background-position:-2160px 0;"></span></dd>
+									<dd><span data-key="91_4_/:&lt;L&gt;" style="background-position:-2184px 0;"></span></dd>
+									<dd><span data-key="92_4_/:jump" style="background-position:-2208px 0;"></span></dd>
+									<dd><span data-key="93_4_/:shake" style="background-position:-2232px 0;"></span></dd>
+									<dd><span data-key="94_4_/:&lt;O&gt;" style="background-position:-2256px 0;"></span></dd>
+									<dd><span data-key="95_4_/:circle" style="background-position:-2280px 0;"></span></dd>
+									<dd><span data-key="96_4_/:kotow" style="background-position:-2304px 0;"></span></dd>
+									<dd><span data-key="97_4_/:turn" style="background-position:-2328px 0;"></span></dd>
+									<dd><span data-key="-1_-1_/:del" class="del"></span></dd>
+								</div>
+							</dl>
+							<dt><ol id="nav_emotion" class="nav_emotion"><span class=""></span><span class=""></span><span class="on"></span><span></span><span></span></ol></dt>
+							
+						</div>
+	        		</div>
+		        
+        	</div>-->
+		</div>
+	</div>
+</div>
+<!--右上角弹出菜单-->
+<div id="topPopover" class="mui-popover">
+	<div class="mui-popover-arrow"></div>
+	<div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont">&#xe60e;</i>转发</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>收藏</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont">&#xe60e;</i>编辑</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>删除</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	mui.init();
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+    document.getElementById("confirmBtn").addEventListener('tap', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('是否提醒所有家长？', '群发提醒', btnArray, function(e) {
+					if (e.index == 1) {
+						info.innerText = '已经全部提醒';
+					} else {
+						info.innerText = '未提醒'
+					}
+				})
+			});
+   </script>
+</body>
+</html>

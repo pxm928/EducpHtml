@@ -1,0 +1,55 @@
+body,html{ margin:0; padding: 0;background: #efeff4;}
+.top{height:auto;position: relative;z-index: 1;overflow:hidden; padding-bottom: 1rem;}
+.top-main{ position: relative;z-index: 1;}
+.space-box{position: relative;max-width:768px; margin:0 auto;}
+.shezhi{position: absolute;right: 0.9rem;top:0.3rem; color: #fff;font-size: 1.3rem;margin-top:10px;}
+.space-bg{width:100%; height:auto; position: absolute;left: 0;top:0; z-index:-1;}
+.top h6{font-size: 1rem; text-align: center; color: #fff;padding-top:2rem;}
+.baby-head{ width:4.2rem; height: 4.2rem;padding: 0.15rem; margin:1.5rem auto 0;background-color:rgba(255,255,255,0.5);overflow: hidden;border-radius: 4.2rem;}
+.baby-head img{ max-width:100%;height: auto;border-radius: 100%;}
+.baby-name{ text-align: center;color: #fff;margin-top:1rem}
+.baby-name p{ font-size:1rem;font-weight: bold; color: #fff;margin: 0 0 0.2rem;}
+.baby-name span{font-size:0.7rem;}
+.baby-newname{width:100px;color:#FFFFFF;margin:1rem auto;font-weight:bold;font-size:1rem;text-align:center; margin-bottom:0.2rem;}
+.baby-newage{width:110px;color:#FFFFFF;margin:0 auto;font-size:0.7rem;text-align:center;}
+.visitors{ background-color: rgba(0,0,0,0.55);display:table;margin:0.8rem auto 0; color: #fff;font-size: 0.7rem; padding: 0.1rem 0.5rem;border-radius: 0.8rem;}
+.visitors i{ font-size: 0.8rem;}
+.shuoshuo{height:2.5rem;overflow: hidden; background-color: #fff;position:relative;overflow: hidden;}
+.shuoshuo i.pen{ position:absolute;left: 0.75rem;top:0.7rem;color: #c3b2b2;font-size: 1rem;}
+.shuoshuo textarea{line-height: 1.5rem;padding:0.5rem 0; float: left; border: none;background-color: none;width:60%;height: 2.5rem;overflow: hidden;text-indent:2rem;font-size: 0.7rem; color: #c3b2b2;}
+.shuoshuo span.zhaopian{float: left; border-left:#ebe2e2 1px solid; border-right:#ebe2e2 1px solid;height: 2.5rem;}
+.shuoshuo span i{color: #c3b2b2;font-size: 1.3rem; padding-left:0.8rem ;padding-right:0.8rem; line-height: 2.5rem;}
+.shuoshuo p{font-size: 0.7rem;position:relative; color: #c3b2b2; width:20%;line-height: 2.5rem;float: right; padding-right: 0.2rem;}
+.shuoshuo{ overflow:hidden;}
+.shuoshuo p span{ position:absolute;top:0.2rem; left:2.6rem;background-color: #f85156;color:#fff;padding:2px 5px;}
+.baby-list{ margin-top:0.4rem; margin-bottom: 3rem; background-color: #fff; padding:0.75rem 0.2rem;}
+.baby-time{ border-left: #f8b0b0 1px solid;margin-left: 0.5rem;padding-bottom: 0.5rem; position: relative;}
+.baby-time i{background-color: #fff;padding:0.3rem; border:#f8b0b0 1px solid; border-radius:1rem;position: absolute;left: -0.35rem;top:0}
+.baby-time i e{background-color:#f8b0b0;width:0.15rem;height: 0.15rem; border-radius: 1rem;position: absolute;left:0.22rem;top:0.22rem;}
+.mui-table-view::before,.mui-table-view::after{background: none;}
+.baby-time span{font-size: 0.75rem;color: #7f6767;position: absolute;left: 0.6rem; top: -0.1rem;}
+.baby-time em{color:#c3b2b2;font-size:0.6rem;font-style: normal; margin-right: 0.2rem;}
+.baby-time p{ padding-left: 0.6rem;color: #7f6767; padding-top:0.3rem;margin-bottom:0.2rem}
+.baby-tips{height: 0.7rem;}
+.mui-table-view.mui-grid-view .mui-table-view-cell{padding-top:5px; margin-bottom:-1px;}
+.baby-list .mui-table-view{margin-top:0.5rem; margin-left: 0.2rem;padding: 0;padding-bottom: 1rem;}
+.baby-list .mui-table-view.mui-grid-view .mui-table-view-cell > a:not(.mui-btn){margin:-10px 0 0 -7px}
+.baby-list .mui-table-view.mui-grid-view .mui-table-view-cell{padding-left: 7px;}
+.courseIco{text-align: center; width:2rem; height: 2rem; background-color:rgba(250,133,136,0.8); border-radius: 2rem; position: fixed;right:0.5rem; bottom:4rem;z-index: 9999;}
+.courseIco i{ color: #fff; font-size: 1rem;line-height: 1.9rem;}
+.course-list{height: 100%;}
+.course-list a{ display: block;}
+.course-list p{border-left: #f8b0b0 1px solid;margin-left: 1rem; margin-top:1rem}
+.course-list .c-today{position:relative;}
+.course-list .c-today strong{text-indent: 0;display:inline-block;text-align:center; width: 1.4rem;height:1.4rem;background-color: #f8b0b0;border-radius: 1.3rem; position: absolute;left: -0.7rem; top:0;}
+.course-list .c-today i{color:#fff;font-size:1rem;line-height:1.5rem;font-weight: normal;}
+.course-list a{ color:#7f6767;font-size: 0.7rem;text-indent: 1.2rem; position: relative;height: 2.5rem;}
+.course-list a span{ color: #c3b2b2;font-size: 0.6rem;padding-left:0.4rem;}
+.course-list a em{background-color: #fff;padding:0.3rem;border:#f8b0b0 1px solid; border-radius:1rem;position: absolute;left: -0.35rem;top:0.15rem;}
+.course-list a em b{background-color:#f8b0b0;width:0.15rem;height:0.15rem;border-radius: 1rem;position: absolute;left:0.22rem;top:0.22rem;}
+.course-list .baby-oneday{ height: 1.2rem;}
+.course-list .baby-oneday strong{line-height: 0; text-indent: 0; display:inline-block;text-align:center; width: 1.4rem;height:1.4rem;background-color: #8ccdff;border-radius: 1.3rem; position: absolute;left: -0.7rem; bottom:0;}
+.course-list .baby-oneday i{ color:#fff;font-size:1rem;line-height:1.5rem;font-weight: normal;}
+.course-list .baby-oneday{line-height:1.2rem;}
+.mui-off-canvas-left, .mui-off-canvas-right{background-color:#fff;height: 100%;}
+.course-list a:active em{background:#f8b0b0;}

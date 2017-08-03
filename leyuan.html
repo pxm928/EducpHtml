@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="css/theme.css" rel="stylesheet"/>
+    <!--公用活动列表-->
+    <link href="css/activeList.css" rel="stylesheet"/>
+    <!--动态样式-->
+    <link href="css/dynamics.css" rel="stylesheet"/>
+</head>
+<script src="js/mui.min.js"></script>
+<script src="js/rem.js"></script>
+<body>
+	<div class="mui-content mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<div class="leyuanLogo">
+				<div class="mui-slider">
+					<div class="mui-slider-group">
+						<div class="mui-slider-item">
+							<a href="javascript://">
+								<img src="images/leyuanLogo.jpg" />
+								<span class="leyuanName">某某幼儿园全名</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="leyuanList">
+				<ul class="mui-table-view mui-grid-view mui-grid-9" id="listLY">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe61d;</i>
+							<span>考勤</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe618;</i>
+							<span>班级相册</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe617;</i>
+							<span>问卷</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe620;</i>
+							<span>班级信息</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe615;</i>
+							<span>活动考勤</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="Html/works/Works.html">
+							<i class="icon iconfont">&#xe621;</i>
+							<span>幼儿作品</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="Html/Notice/gonggao.html">
+							<i class="icon iconfont">&#xe619;</i>
+							<span>公告</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe624;</i>
+							<span>荣誉榜</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe61c;</i>
+							<span>园长信箱</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="Html/Recipes/shipu.html">
+							<i class="icon iconfont">&#xe614;</i>
+							<span>校园食谱</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="Html/Course/kechengbiao.html">
+							<i class="icon iconfont">&#xe61a;</i>
+							<span>周计划</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="javascript://">
+							<i class="icon iconfont">&#xe622;</i>
+							<span>排行榜</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+<script>
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+    mui("#listLY").on("tap",".mui-table-view-cell>a",function(){
+    	var url = this.getAttribute("href");
+		//打开关于页面
+		mui.openWindow({
+		    url: url,
+		    waiting:{
+		    	autoShow:false
+		    }
+		});
+    });
+</script>
+</body>
+
+</html>

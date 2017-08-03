@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+    <!--统计-->
+    <link href="../../css/statistics.css" rel="stylesheet"/>  
+</head>
+<body class="mui-fullscreen">
+	<!--页面主结构开始-->
+	<div id="app" class="mui-views">
+		<div class="mui-view">
+			<div class="statusTop"></div>
+			<div class="mui-navbar">
+			</div>
+			<div class="mui-pages">
+			</div>
+		</div>
+	</div>
+	<!--页面主结构结束-->
+	<!--单页面开始-->
+	<div id="tongji" class="mui-page">
+		<div class="mui-navbar-inner mui-bar mui-bar-nav">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav"></span>
+			</button>
+			<div class="edu-switch" style="display: table;">
+				<span class="e">学生</span>
+				<span>老师</span>
+			</div>
+			<div class="icon-group">
+				<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe602;</a>
+				<a class="mui-icon mui-action-menu icon iconfont camera mui-pull-right">
+					&#xe601;</a>
+			</div>
+		</div>
+		<div class="mui-page-content">
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--统计-->
+					<div class="statistics">
+						<div class="stat-top">
+							<h5>2016-09-21 (星期三)</h5>
+							<div class="banji mm"><i class="icon iconfont">&#xe637;</i>小二班</div>
+							<div class="renshu mm"><i class="icon iconfont">&#xe636;</i>共25人</div>
+							<div class="mui-clearfix"></div>
+							<div class="ren-number">
+								<ul class="mui-table-view mui-grid-view mui-grid-9">
+									<li class="mui-table-view-cell mui-media mui-col-xs-6">
+										<a href="javascript://">
+											<i class="icon iconfont">&#xe63b;</i> 实到人数
+											<br/>
+											<b>20</b>人
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-6">
+										<a href="javascript://">
+											<i class="icon iconfont">&#xe63a;</i> 未到人数
+											<br/>
+											<b>6</b>人
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="stat-min">
+							<div class="tongji"><img src="../../images/tongji.jpg" /></div>
+						</div>
+						<div class="mui-card">
+							<h4 class="kc-title">上学</h4>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#number">
+										<span class="mui-pull-right">20人</span> 实到人数
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#number">
+										<span class="mui-pull-right">0人</span> 迟到
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mui-card">
+							<h4 class="kc-title">放学</h4>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#number">
+										<span class="mui-pull-right">20人</span> 实到人数
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right" href="#number">
+										<span class="mui-pull-right">0人</span> 迟到
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--单页面结束-->	
+	<!--右上角弹出菜单-->
+	<div id="topPopover" class="mui-popover">
+		<div class="mui-popover-arrow"></div>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#"><i class="icon iconfont">&#xe60e;</i>请假</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>联系人</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="number" class="mui-page">
+		<div class="gonggao active-list">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<div class="comment-list mui-text-left">
+						<div class="com-conment">
+							<div class="com-list">
+								<span class="mui-pull-right">12：20</span>
+								<a href="javascript:;">
+									<strong><img src="../../images/head.jpg" /></strong>秦玄玉（管理员）
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<div class="comment-list mui-text-left">
+						<div class="com-conment">
+							<div class="com-list">
+								<span class="mui-pull-right">12：30</span>
+								<a href="javascript:;">
+									<strong><img src="../../images/img-list1.jpg" /></strong>陈丽（家长）
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/mui.view.js"></script>
+<script src='../../js/feedback.js'></script>
+<script src="../../js/rem.js"></script>
+<script>
+	mui.init();
+	//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#tongji'
+		});
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+    var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else { //执行webview后退
+					oldBack();
+				}
+			};
+			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+			view.addEventListener('pageBeforeShow', function(e) {
+				//				console.log(e.detail.page.id + ' beforeShow');
+			});
+			view.addEventListener('pageShow', function(e) {
+				//				console.log(e.detail.page.id + ' show');
+			});
+			view.addEventListener('pageBeforeBack', function(e) {
+				//				console.log(e.detail.page.id + ' beforeBack');
+			});
+			view.addEventListener('pageBack', function(e) {
+				//				console.log(e.detail.page.id + ' back');
+			});
+		})(mui);
+</script>
+</html>

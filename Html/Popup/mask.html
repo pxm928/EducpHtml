@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<script src="../../js/mui.js"></script>
+		<script src="../../js/commonbase.js"></script>
+		<style type="text/css">
+			body {
+				background: transparent;
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			
+			.mask {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, .4);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mask" class="mask"></div>
+		<script>
+			mui.init();
+			var parent;
+			mui.plusReady(function() {
+				parent = plus.webview.getLaunchWebview();
+			});
+			document.getElementById("mask").addEventListener('tap',function(){
+				base.triggerEvent(parent,'closeInfoClick');
+			})
+		</script>
+	</body>
+</html>

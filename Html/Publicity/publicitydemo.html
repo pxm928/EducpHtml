@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.previewbg-in{opacity:1;animation:fadeIn 2s;-webkit-animation:fadeIn 2s;}
+			.previewbg-out{opacity:0;animation:fadeOut 2s;-webkit-animation: fadeOut 2s;}
+			@keyframes fadeIn{from { opacity: 0;}to {opacity: 1;}}
+			@keyframes fadeOut{from {opacity: 1;}to {opacity: 0;}}
+			@-webkit-keyframes fadeIn{from { opacity: 0;}to {opacity: 1;}}
+			@-webkit-keyframes fadeOut{from {opacity: 1;}to {opacity: 0;}}
+			
+			.aircraft{ position: fixed; right:2rem; top:10rem;width:3rem;-webkit-animation:aircraft 2.5s;-ms-animation:bird1 3.5s linear running infinite;}
+			@-webkit-keyframes aircraft{
+				0%{ -webkit-transform:translate(200px,400px);}
+				100%{ -webkit-transform:translate(0,0);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="aircraft" style="width: 100px; height: 100px; background: red;"></div>
+	</body>
+</html>

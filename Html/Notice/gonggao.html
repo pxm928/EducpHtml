@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <!--公告列表-->
+    <link href="../../css/activeList.css" rel="stylesheet"/>
+    
+</head>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/rem.js"></script>
+<body>
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <div class="mui-inner-wrap">
+    	<div class="statusTop"></div>  
+        <div class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-title" style="display: none;">家长</h1>
+				<div class="edu-switch"style="display: table;">
+					<span class="e">学生</span>
+					<span>老师</span>
+				</div>
+				<div class="icon-group">
+					<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe602;</a>
+					<a class="mui-icon mui-action-menu icon iconfont camera mui-pull-right">
+						&#xe601;</a>
+				</div>
+			</header>
+	        <div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+	        		<!--活动列表-->
+					<div class="gonggao active-list" style="display: block;">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#bottomPopover" class="miu-xiala"><i class="icon iconfont mui-xiajiantou">&#xe60a;</i></a>
+								<a href="javascript:;" class="">
+									<img src="../../images/small-img1.jpg" class="mui-media-object mui-pull-left">
+									<div class="mui-media-body  mui-text-left">
+										<h4>张俊杰<i>|</i>小班<em>【公告 】</em></h4>
+										<span class="time">发布时间 : 2016.08.08</span>
+									</div>
+								</a>
+								<p class="active-text mui-text-left">张俊杰动态张俊六一儿童节少儿绘本_沪江网店童六一送礼张俊杰动态张俊六一儿童节</p>
+								<div class="mui-table-view mui-grid-view" style="padding:0;">
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+								</div>
+								<div class="dianzan-pinglun mui-text-right">
+									<span><i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>赞</span>
+									<b>|</b>
+									<span><i class="icon iconfont">&#xe609;</i>评论</span>
+								</div>
+								<div class="comment-list mui-text-left">
+									<p class="com-head">
+										<i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>
+										<a href="javascript://">张老师</a><a href="javascript://">陈老师</a><a href="javascript://">李老师</a>
+									</p>
+									<div class="com-conment">
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">张老师：</a>
+											<div class="mui-media-body mui-text-left">
+												宝宝好棒，吹拉弹唱样样精通！
+											</div>
+										</div>
+										<div class="com-list">
+											<div class="d-reply">
+												<a href="javascript:;" class="mui-pull-left">李老师</a>
+												<span class="mui-pull-left">回复</span>
+												<a href="javascript:;" class="mui-pull-left">张老师</a>
+												<div class="mui-media-body mui-text-left">
+													宝宝好棒，吹拉弹唱样样精通！
+												</div>
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+									</div>
+									<p class="more">查看全部10条评论</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="#bottomPopover" class="miu-xiala"><i class="icon iconfont mui-xiajiantou">&#xe60a;</i></a>
+								<a href="javascript:;" class="">
+									<img src="../../images/small-img2.jpg" class="mui-media-object mui-pull-left">
+									<div class="mui-media-body  mui-text-left">
+										<h4>秦梓鑫<i>|</i>小班<em>【公告 】</em></h4>
+										<span class="time">发布时间 : 2016.08.08</span>
+									</div>
+								</a>
+								<p class="active-text mui-text-left">秦梓鑫动态张俊六一儿童节少儿绘本_沪江网店童六一送礼张俊杰动态张俊六一儿童节</p>
+								<div class="mui-table-view mui-grid-view" style="padding: 0;">
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="../../images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+								</div>
+								<div class="dianzan-pinglun mui-text-right">
+									<span><i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>赞</span>
+									<b>|</b>
+									<span><i class="icon iconfont">&#xe609;</i>评论</span>
+								</div>
+								<div class="comment-list mui-text-left">
+									<p class="com-head">
+										<i class="icon iconfont" style="font-size: 1.1rem;">&#xe608;</i>
+										<a href="javascript://">张老师</a>
+										<a href="javascript://">陈老师</a>
+										<a href="javascript://">李老师</a>
+										<a href="javascript://">张老师</a>
+										<a href="javascript://">陈老师</a>
+										<a href="javascript://">李老师</a>
+										<a href="javascript://">张老师</a>
+										<a href="javascript://">陈老师</a>
+										<a href="javascript://">李老师</a>
+										<a href="javascript://">张老师</a>
+										<a href="javascript://">陈老师</a>
+										<a href="javascript://">李老师</a>
+									</p>
+									<div class="com-conment">
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">张老师：</a>
+											<div class="mui-media-body mui-text-left">
+												宝宝好棒，吹拉弹唱样样精通！
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">黄老师：</a>
+											<div class="mui-media-body mui-text-left">
+												幼儿阶段，家长多多陪伴！
+											</div>
+										</div>
+										<div class="com-list">
+											<a href="javascript:;" class="mui-pull-left">陈老师：</a>
+											<div class="mui-media-body mui-text-left">
+												这个产品用户体验很棒，期待我们的升级版本...
+											</div>
+										</div>
+									</div>
+									<p class="more">查看全部10条评论</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--公告列表-->
+					<div class="gonggao gonggao-list" style="display: block;">
+						<ul  id="OA_task_2" class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					        <li class="mui-table-view-cell">
+					        	<div class="mui-slider-handle">
+					        		<div class="mui-table">
+						                <div class="mui-table-cell mui-col-xs-12">
+						                    <h4>公告名称-周末聚会治愈孤独的人信息化推进办公室张彦合同付款信息化<span>【班级】</span></h4>
+						                </div>
+							        </div>
+							        <div class="mui-table">
+										<div class="mui-table-cell">
+											<p class="mui-col-xs-6 mui-pull-right mui-text-right"><i class="icon iconfont">&#xe62f;</i>1/3 </p>
+											<h5 class="mui-col-xs-6"><i class="icon iconfont">&#xe62d;</i>12:25</h5>
+										</div>
+									</div>
+					        	</div>
+					            <div class="mui-slider-right mui-disabled">
+					            	<a class="mui-btn mui-btn-yellow"style="font-size: 0.8rem;">编辑</a>
+									<a class="mui-btn mui-btn-red" style="font-size:  0.8rem;">删除</a>
+								</div>
+					        </li>
+					      </ul>
+					</div>
+	        	</div>
+	        </div>
+        </div>
+	</div>
+</div>
+<!--右上角弹出菜单-->
+<div id="topPopover" class="mui-popover">
+	<div class="mui-popover-arrow"></div>
+	<div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont">&#xe60e;</i>请假</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>联系人</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--右下角弹出菜单-->
+<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+	<div class="mui-popover-arrow"></div>
+	<div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">
+						<span class="fenxiang mui-pull-right">
+							<i class="icon iconfont" style="color: #38abf4;">&#xe600;</i>
+							<i class="icon iconfont" style="color: #04d40c;">&#xe60c;</i>
+							<i class="icon iconfont" style="color: #ff6349;">&#xe611;</i>
+							<i class="icon iconfont" style="color: #2199ed;">&#xe613;</i>
+							<i class="icon iconfont" style="color: #04d40c;">&#xe612;</i>
+						</span>
+						<i class="icon iconfont" style="font-size: 1.1rem;">&#xe60f;</i>分享到
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">
+						<i class="icon iconfont" style="font-size: 1.1rem;">&#xe610;</i>下载
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">
+						<i class="icon iconfont">&#xe60b;</i>收藏
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>	
+
+<script>
+	mui.init({
+		swipeBack:true
+	});
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+    
+    (function($) {
+		var btnArray = ['确认', '取消'];
+    	//第二个demo，向左拖拽后显示操作图标，释放后自动触发的业务逻辑
+			$('.mui-table-view-cell').on('tap', '.mui-btn-red', function(event)  {
+				var elem = this;
+				var li = elem.parentNode.parentNode;
+				mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function(e) {
+					if (e.index == 0) {
+						li.parentNode.removeChild(li);
+					} else {
+						setTimeout(function() {
+							$.swipeoutClose(li);
+						}, 0);
+					}
+				});
+			});
+    })(mui);
+</script>
+</body>
+</html>

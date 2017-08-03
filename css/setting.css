@@ -1,0 +1,13 @@
+/*设置*/
+.mui-card{margin:0; margin-top:5px; border-radius: 0;}
+.mui-card .mui-table-view{ border-radius: 0;}
+.mui-card span{ margin-right: 1rem;}
+.mui-card span,.mui-card .mui-table-view-cell>a:not(.mui-btn){font-size: 0.8rem; color: #806766;}
+.touxiang{width:2rem; height: 2rem;border-radius: 2rem;vertical-align: middle;}
+.mui-navigate-right:after, .mui-push-right:after{ font-size: 1rem;}
+/*.mui-card .mui-table-view .mui-table-view-cell:first-child{height:2.6rem;padding: 5px 15px; overflow: hidden; }
+.mui-card .mui-table-view .mui-table-view-cell:first-child a{line-height:2.5rem; margin:-5px -15px}
+.mui-card .mui-table-view .mui-table-view-cell:first-child a span{line-height: 0;}*/
+.mui-card .mui-table-view .first-Item{height:2.6rem;padding: 5px 15px; overflow: hidden;}
+.mui-card .mui-table-view .first-Item a{line-height:2.5rem; margin:-5px -15px}
+.mui-card .mui-table-view .first-Item a span{line-height: 0;}

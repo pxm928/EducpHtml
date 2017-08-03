@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我校作品</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="../../images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="../../css/theme.css" rel="stylesheet"/>
+    <link href="../../css/works.css" rel="stylesheet"/>
+    <style type="text/css">
+    	.mui-table-view-cell > a:not(.mui-btn){height: 200px;overflow: hidden;display: flex;display:-webkit-flex;justify-content:space-between;-webkit-justify-content:space-between;-webkit-align-items:center;align-items:center;}
+    	.works .mui-table-view.mui-grid-view .mui-table-view-cell > a:not(.mui-btn){margin-bottom: 5px;}
+    </style>
+</head>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/rem.js"></script>
+<body>
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <div class="mui-inner-wrap">
+    	<div class="statusTop"></div>  
+        <div class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<div class="edu-switch"style="display: table;">
+					<span class="e">我校</span>
+					<span>平台</span>
+				</div>
+				<div class="icon-group">
+					<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe646;</a>
+					<a class="mui-icon mui-action-menu icon iconfont camera mui-pull-right">&#xe647;</a>
+				</div>
+			</header>
+	        <div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+	        		<!--这里是我校作品-->
+	        		<div class="works mui-show">
+	        			<ul class="mui-table-view mui-grid-view">
+					        <li class="mui-table-view-cell mui-media mui-col-xs-12">
+			        			<div class="works-title mui-clearfix">
+				        			<label class="mui-pull-left red">类型</label>
+				        			<a class="mui-pull-left" href="javascript://">六一.我的儿童节</a>
+				        			<span class="mui-pull-right">小班：张磊</span>
+			        			</div>
+					            <a href="#" class="works-img">
+					                <img class="mui-media-object" src="../../images/active1.jpg">
+					            </a>
+					            <div class="work-info">
+					            	<span class="mui-pull-left time">2015-10-10</span>
+					            	<div class="dianzan-pinglun mui-pull-right mui-text-right">
+										<span><i class="icon iconfont" style="font-size: 1rem;">&#xe608;</i>20万</span>
+										<b>|</b>
+										<span><i class="icon iconfont">&#xe609;</i>1544</span>
+									</div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-media mui-col-xs-12">
+			        			<div class="works-title mui-clearfix">
+				        			<label class="mui-pull-left blue">类型</label>
+				        			<a class="mui-pull-left" href="javascript://">六一.我的儿童节</a>
+				        			<span class="mui-pull-right">小班：张磊</span>
+			        			</div>
+					            <a href="#">
+					                <img class="mui-media-object" src="../../images/active2.jpg">
+					            </a>
+					            <div class="work-info">
+					            	<span class="mui-pull-left time">2015-10-10</span>
+					            	<div class="dianzan-pinglun mui-pull-right mui-text-right">
+										<span><i class="icon iconfont" style="font-size: 1rem;">&#xe608;</i>20万</span>
+										<b>|</b>
+										<span><i class="icon iconfont">&#xe609;</i>1544</span>
+									</div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-media mui-col-xs-12">
+			        			<div class="works-title mui-clearfix">
+				        			<label class="mui-pull-left violet">类型</label>
+				        			<a class="mui-pull-left" href="javascript://">六一.我的儿童节</a>
+				        			<span class="mui-pull-right">小班：张磊</span>
+			        			</div>
+					            <a href="#">
+					                <img class="mui-media-object" src="../../images/active1.jpg">
+					            </a>
+					            <div class="work-info">
+					            	<span class="mui-pull-left time">2015-10-10</span>
+					            	<div class="dianzan-pinglun mui-pull-right mui-text-right">
+										<span><i class="icon iconfont" style="font-size: 1rem;">&#xe608;</i>20万</span>
+										<b>|</b>
+										<span><i class="icon iconfont">&#xe609;</i>1544</span>
+									</div>
+					            </div>
+					        </li>
+					    </ul>
+	        		</div>
+	        		<!--这里是平台作品-->
+	        		<div class="platform mui-hidden">
+	        			<div id="slider" class="mui-slider">
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="../../images/banner/banner4.jpg">
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../images/banner/banner1.jpg">
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../images/banner/banner2.jpg">
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../images/banner/banner3.jpg">
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../images/banner/banner4.jpg">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="../../images/banner/banner1.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator mui-text-center">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<div class="recommendation mui-block">
+							<div class="work-modle">
+								<h5 class="recom-title"><b></b>编辑推荐</h5>
+								<ul class="mui-table-view mui-grid-view">
+									<li class="mui-table-view-cell  mui-col-xs-4">
+										<a href="#" class="imgH">
+											<img class="mui-media-object" src="../../images/w6.jpg">
+											<div class="work-info">
+												<span class="mui-pull-left img-title">作品名称作品名称作品名称</span>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-col-xs-4">
+										<a href="#"class="imgH">
+											<img class="mui-media-object" src="../../images/w6.jpg">
+											<div class="work-info">
+												<span class="mui-pull-left img-title">作品名称作品名称作品名称</span>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell  mui-col-xs-4">
+										<a href="#"class="imgH">
+											<img class="mui-media-object" src="../../images/w6.jpg">
+											<div class="work-info">
+												<span class="mui-pull-left img-title">作品名称作品名称作品名称</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="work-modle">
+								<h5 class="recom-title"><b></b>新作出炉</h5>
+								<div class="mui-slider">
+									<div class="mui-slider-group">
+										<div class="mui-slider-item">
+											<img src="../../images/w1.jpg" />
+										</div>
+									</div>
+									<div class="mui-slider-group">
+										<div class="mui-slider-item">
+											<img src="../../images/w4.jpg" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+	</div>
+</div>
+<!--右上角弹出菜单-->
+<div id="topPopover" class="mui-popover">
+	<div class="mui-popover-arrow"></div>
+	<div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont">&#xe60e;</i>请假</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>联系人</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	mui.init({
+		swipeBack:true
+	});
+    //滚动条
+    mui('.mui-scroll-wrapper').scroll();
+</script>
+</body>
+</html>

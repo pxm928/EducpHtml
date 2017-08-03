@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <script src="../../js/mui.min.js"></script>
+	    <script src="../../js/commonbase.js"></script>
+	    <link href="../../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../../fonts/iconfont.css" rel="stylesheet"/>
+	    <!--公用样式-->
+	    <link href="../../css/theme.css" rel="stylesheet"/>
+	    <!--动态样式-->
+	    <link href="../../css/dynamics.css" rel="stylesheet"/>
+	    <style>
+	    	html,body{height:100%;}
+	    	#topPopover,.mui-table-view{ border-radius:6px;}
+	    </style>
+	</head>
+	<body style="background: transparent;">
+		<div id="mask" style="width:100%;height:100%; background:rgba(0,0,0,0.4);"></div>
+		<!--右上角弹出菜单-->
+		<div id="topPopover"class="mui-popover mui-active" style="background: #FFFFFF;">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li rel='1' class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 17px; font-weight: bold;">&#xe68d;</i>请假</a>
+				</li>
+				<li rel='2' class="mui-table-view-cell">
+					<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>联系人</a>
+				</li>
+			</ul>
+		</div>
+		
+		<script>
+			mui.init();
+			var parent;
+			mui.plusReady(function() {
+				parent = plus.webview.currentWebview().opener();
+			});
+		
+			document.getElementById("mask").addEventListener('tap',function(){
+				base.triggerEvent(parent,'closePopup');
+			});
+			mui('.mui-table-view').on('tap','li',function(){
+				var code = this.getAttribute('rel');
+				base.triggerEvent(parent,'closePopup',{code:code});
+			})
+		</script>
+	</body>
+</html>

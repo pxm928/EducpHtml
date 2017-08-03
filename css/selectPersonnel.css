@@ -1,0 +1,11 @@
+.mui-search:before{ top:20px;}
+.mui-search input{background-color: #fff}
+.input-box{padding:8px 0 0; background-color: #eee;}
+.mui-search .mui-placeholder,.mui-search input[type=search]{ border-radius: 0;}
+.mui-collapse-content strong{text-indent: 0;position:absolute;left:50px;top:8px; width:30px; height: 30px;border-radius: 30px; overflow: hidden;display: inline-block;}
+.mui-collapse-content strong img{ max-width:100%;}
+.mui-table-view-cell.mui-checkbox.mui-left, .mui-table-view-cell.mui-radio.mui-left{padding-left:5px;text-indent:85px;}
+.mui-table-view-cell.mui-collapse .mui-collapse-content{ margin:11px -25px -11px; padding:8px 0;}
+.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{left:15px;}
+.mui-navigate-right{-webkit-text-stroke-width:0px; }
+.mui-table-view-cell>a:not(.mui-btn){color: #767676;}

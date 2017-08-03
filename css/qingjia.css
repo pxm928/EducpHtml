@@ -1,0 +1,8 @@
+/*请假*/
+.mui-card{margin:0 0 8px}
+h5.qingjia{ height:2rem; line-height: 2rem; margin:0; padding: 0;text-indent: 0.5rem;}
+.mui-table-view-cell{font-weight: normal; color: #7f6767; font-size: 0.75rem;}
+.mui-card .mui-table-view-cell::after{ left: 0;}
+.mui-card span{ margin-right: 1rem;}
+.mui-card span,.mui-card .mui-table-view-cell>a:not(.mui-btn){ color: #806766;}
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{ color: #f85156;}

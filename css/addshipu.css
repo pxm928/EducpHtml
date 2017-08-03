@@ -1,0 +1,27 @@
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{ color: #f85156;}
+.food{ background-color: #fff; margin-top:8px;}
+.food h2 a{display:block; padding:10px 15px;color: #7f6767;font-size:0.8rem; font-weight: normal;}
+.food li p{color: #c3b2b2;margin:0; padding: 0;margin-top:-0.3rem;font-size: 0.7rem;}
+.food li div{color: #806766;font-size: 0.7rem;}
+.food li img{ width:3rem; height: 3rem;border-radius: 3rem;}
+/*添加菜谱*/
+.mui-card{margin:0; margin-top:5px; border-radius: 0;}
+.mui-card .mui-table-view{ border-radius: 0;}
+.mui-card span{ margin-right: 1rem;}
+.mui-card span,.mui-card .mui-table-view-cell>a:not(.mui-btn){ color: #806766;}
+.food h2:after{right: 15px;top: 50%; content:'\e583';font-size: 0.6rem; font-family:Muiicons; position: absolute;color:#bbb;}
+.food h2{ position: relative;}
+.add-food-div{ margin-top:0.4rem}
+.mui-search:before{ top:20px;}
+.mui-search input{background-color: #fff}
+.input-box{padding:8px 8px 0; background-color: #eee;}
+.caiImg{ width:4rem; height: 4rem;border-radius: 4rem;}
+.caiImg img{max-width: 100%;border-radius: 4rem;}
+.caiIMg-tit{color:#806766; width:25%;}
+/*添加课程*/
+.kc-title{border-bottom: #e3e3e5 1px solid;height:1.5rem; text-indent: 11px;color: #806766;padding-top: 5px; font-weight: normal;}
+.mui-card span.ico-bg{background-color: #ccc;width:0.8rem; height:0.8rem;text-align: center;line-height: 0.8rem; padding: 0;
+font-size: 0.8rem;border-radius: 1rem;font-weight: bold;color: #fff;margin:10px 11px 0 0;}
+.addkc{ height:2rem;line-height: 2rem;padding: 0;margin:11px auto;width:90%;background-color: #f0a3a5;border-color:#f0a3a5}
+.addkc:active{background-color: #f85156;border-color:#f85156}
+.mui-card .mui-input-row label{padding-left: 0;padding-right: 0; color: #806766;width:25%}

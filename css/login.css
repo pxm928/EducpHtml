@@ -1,0 +1,93 @@
+.area {
+	margin: 20px auto 0px auto;
+}
+
+.mui-input-group {
+	margin-top: 10px;
+}
+
+.mui-input-group:first-child {
+	margin-top: 20px;
+}
+
+.mui-input-group label {
+	width: 22%;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	width: 78%;
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	top: 6px;
+}
+
+.mui-content-padded {
+	margin-top: 25px;
+}
+
+.mui-btn {
+	padding: 10px;
+}
+
+.link-area {
+	display: block;
+	margin:15px 10px;
+	text-align: center;
+}
+
+.spliter {
+	color: #bbb;
+	padding: 0px 8px;
+}
+
+.oauth-area {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.oauth-area .oauth-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 30px 30px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0px 20px;
+	/*-webkit-filter: grayscale(100%); */
+	border: solid 1px #ddd;
+	border-radius: 25px;
+}
+.oauth-area .oauth-btn:active {
+	border: solid 1px #aaa;
+}
+.oauth-area .oauth-btn.disabled {
+	background-color: #ddd;
+}
+/*登录*/
+body,.mui-content{background-color: #faf8f8;}
+header.mui-bar{ background-color:#f85156;box-shadow: 0 0 0 none; height:12rem;}
+header .mui-title{color: #fff;font-size: 1.2rem; line-height:4rem;}
+.baby-head{width:5rem;height:5rem;padding:0.25rem;margin:5rem auto 0;background-color:rgba(255,255,255,0.5);overflow: hidden;border-radius: 5rem;}
+.baby-head img{max-width:100%;height:auto;border-radius:100%;}
+.mui-bar-nav~.mui-content{padding-top:11rem;}
+.mui-input-group:before,.mui-input-group:after{background: none;}
+.mui-input-group .mui-input-row{ height:3rem}
+.mui-input-row label{padding:15px;}
+.mui-input-group{ background:none;}
+.mui-input-row label~input{ height: 3rem; padding:15px 0;}
+.mui-input-row label{text-align: center;}
+.mui-input-row label i{color:#afafaf;font-size: 1.4rem;}
+.mui-btn-red{background-color: #f85156;}
+.link-area a{ color: #818181;font-size: 0.8rem;}
+.link-area a.forgetPassword{color:#b52f36;}
+header.new-nav{ height: 45px;}
+header.new-nav .mui-title{ line-height: 45px;}

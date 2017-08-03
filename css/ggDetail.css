@@ -1,0 +1,60 @@
+body,.mui-content{ background-color: #fff;}
+.ggDetail{text-align:Justify;text-justify:inter-ideograph; background-color: #f1f1f1;font-size: 0.8rem; padding: 10px 11px;color: #7f6767;border-top:#E5E4E4 1px solid;border-bottom:#E5E4E4 1px solid; margin-top:5px}
+.gg-field p,.gg-field span{ line-height: 24px; color: #938585;font-size: 0.7rem; margin:0; padding: 0;}
+.gg-field p{ margin-top:0.5rem}
+.gg-field i{ font-size: 0.7rem;}
+.gg-switch{ background-color: #fff;width:100%; height:1.5rem;position: relative;}
+.gg-switch span{ width:100%; border-bottom: #eee 1px solid; position: absolute;left: 0;bottom: 0;height: 0;}
+.gg-switch a,.gg-switch a em,.gg-switch b{font-style: normal;line-height: 1.65rem; font-weight: normal;color: #949292;font-size: 0.7rem;float: left; }
+.gg-switch a{ padding: 0 0.5rem;border-bottom: transparent 1px solid;}
+.gg-switch a.mui-active em{color:#000;border-bottom: #ff7c00 1px solid; padding: 0 5px;}
+.switchDiv{background-color: #fff;}
+.pinglun span.no{text-align: center; display: block; padding-top: 3rem;color: #c8c8c8;font-size: 1rem;}
+.comment-list{margin:0.3rem 0.5rem 0.2rem 0.5rem; padding-bottom: 0.2rem;overflow: hidden;}
+.com-conment{padding: 0.4rem 0 0.2rem;}
+.com-conment a{ text-indent: 0.5rem;color: #875656;}
+.com-conment a,.com-conment div{font-size: 0.7rem;}
+.com-conment div{color:#938585;}
+.com-conment strong{text-indent: 0;background: #ddd;width:2rem; height: 2rem; border-radius: 2rem;float:left; margin-right: 0.5rem; }
+.com-conment a img{max-width:2rem;border-radius: 100%;height:100%}
+.comment-list .more{ padding:0.4rem 0}
+.mui-table-view-cell{ padding: 0;}
+.mui-table-view:before,.mui-table-view:after,.mui-table-view-cell:after{ background: none;}
+.active-list li{ border-bottom: #eee 1px solid;}
+.gg-foot{padding: 0 8px;margin:0; border-top:#eee 1px solid;  height:1.9rem;width:100%; background-color: #f8f8f8;display: table; overflow: hidden;}
+.gg-foot span,.gg-foot a,.gg-foot div{vertical-align: middle; height:1.9rem; overflow: hidden; display: table-cell;margin:0; padding: 0;}
+.gg-foot div.mui-popup-text textarea{ border-radius: 20px;border-color:#cecdcd;padding:0.25rem 8px;margin:0; margin-top:0.3rem;height:inherit;background:none;}
+.gg-foot a{text-align: right;}
+.gg-foot span i{font-size: 1.5rem;color: #858a8f; margin:0; padding: 0;}
+.no-look button{ margin:0 auto;display: block;margin-top:0.5rem; padding: 0.2rem 4rem;}
+.gg-switch .mui-tab-item{overflow:initial;height: auto;}
+.gg-foot-box{position: fixed;left: 0;bottom: 0;z-index: 99;width:100%;background-color: #f6f6f6;}
+
+.active-list{ margin:0.5rem 0;background-color: #fff;}
+.active-list .mui-table-view::before,.active-list .mui-table-view::after,.active-list{ background: none;}
+.active-list .mui-table-view li{background-color: #fff;position: relative;}
+.mui-table-view,.mui-table-view li:before,.mui-table-view li:after{background: none;border:none}
+.mui-xiajiantou{ position: absolute; right: 0.5rem; top:0.3rem; z-index:5; color: #7f6767;font-size: 1.1rem;}
+
+.active-list .mui-media-object{ width:2.5rem; height: 2.5rem;border-radius: 2.5rem;max-width:2.5rem}
+.active-list .mui-media-body h4{font-weight: normal;font-size: 0.7rem; color: #7f6767;}
+.active-list .mui-media-body h4 i{ padding: 0 0.5rem;}
+.active-list .mui-media-body h4 em{font-size: 0.5rem; font-style: normal; padding-left:0.5rem;}
+.active-list .mui-media-body .time{ font-size:0.6rem;color: #7f6767;}
+.active-list .mui-table-view .active-text{white-space:normal;font-size: 0.65rem; color: #7f6767; margin-top: 5px;margin-bottom: 10px;}
+.active-list .mui-table-view .mui-table-view .mui-media-object{border-radius: 0;}
+.mui-table-view-cell a.miu-xiala{overflow:visible;}
+.mui-table-view-cell{padding: 8px 10px;}
+.mui-table-view.mui-grid-view{ margin:0.4rem 0;}
+.mui-table-view.mui-grid-view p.mui-table-view-cell {padding: 0 1px;margin:0px 0 1px;}
+.mui-table-view.mui-grid-view p.mui-table-view-cell>a:not(.mui-btn){padding: 0;margin:0; font-size:0;}
+.mui-table-view-cell>a:not(.mui-btn).mui-active{background:none;}
+.mui-popover .mui-table-view-cell>a:not(.mui-btn).mui-active{background:#eee;}
+.dianzan-pinglun span{ color:#938585;font-size:0.6rem;}
+.dianzan-pinglun span i{font-size:1rem;padding-right: 0.1rem;}
+.dianzan-pinglun b{ padding: 0 0.3rem; font-size: 1rem;font-weight: normal;color:#938585;}
+.comment-list .com-head{color: #875656;padding:0 0.5rem; margin-bottom: 0;}
+.comment-list .com-head a{ color:inherit;font-size: 0.6rem; padding-right: 0.2rem;}
+.comment-bordertop{border-top: 1px solid #eee; margin: 0;}
+.nopaddion-top{ padding-top: 0; padding-bottom: 0;}
+.nomargin-top{ margin-top: 0; margin-bottom: 0;}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>空间</title>
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="apple-touch-icon" href="images/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed-iphone.png" />
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="fonts/iconfont.css" rel="stylesheet" />
+		 <!--图片展示-->
+    	<link href="css/preview.css" rel="stylesheet"/>
+		<link href="css/space.css" rel="stylesheet" />
+	    <style type="text/css">
+	    	.imghide{ overflow: hidden; margin-left: 0.6rem; margin-bottom: 0.4rem;}
+			.shuoshuo label{line-height: 1.5rem;padding:0.5rem 0; float: left; border: none;background-color: none;width:60%;height: 2.5rem;overflow: hidden;text-indent:2rem;font-size: 0.7rem; color: #c3b2b2;}
+			
+			.user-return{position: absolute; line-height:30px;color: #FFFFFF; margin-left:-15px; margin-top:5px; z-index: 8888;}
+			.mui-btn .mui-icon{ font-size:30px;}
+			.user-back-but{height: 30px; line-height: 30px; float:left;}
+			.user-back-font{ margin-left: -5px;line-height:28px; font-size:18px;}
+	    </style>
+	</head>
+	<body>
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<div class="space-box mui-inner-wrap">
+			<div class="mui-content mui-scroll-wrapper">
+	        	<div class="mui-scroll">
+					<div class="top" style="height:250px;">
+						<button type="button" class="mui-action-back mui-btn mui-btn-link user-return">
+							<span class="mui-icon mui-icon-left-nav user-back-but"></span>
+							<span class="user-back-but user-back-font">返回</span> 
+						</button>
+						<img src="images/space-bg.jpg" id="gggsss" class="space-bg">
+						<i class="icon iconfont shezhi">&#xe629;</i>
+						<div class="baby-head">
+							<img src="images/baby-head.jpg">
+						</div>
+						<p class="baby-newname">张宇萌</p>
+						<p class="baby-newage">5岁9个月12天</p>
+						<div class="visitors">
+							<i class="icon iconfont">&#xe628;</i>访客总量&nbsp;&nbsp;658&nbsp;&nbsp;
+							<i class="icon iconfont">&#xe627;</i>点赞&nbsp;&nbsp;50
+						</div>
+						<!--<div class="top-main">
+							<i class="icon iconfont shezhi">&#xe629;</i>
+							<div class="baby-head">
+								<img src="images/baby-head.jpg">
+							</div>
+							<div class="baby-name">
+								<p>张宇萌</p>
+								<span>5岁9个月12天</span>
+							</div>
+							<div class="visitors">
+								<i class="icon iconfont">&#xe628;</i>访客总量&nbsp;&nbsp;658&nbsp;&nbsp;
+								<i class="icon iconfont">&#xe627;</i>点赞&nbsp;&nbsp;50
+							</div>
+						</div>-->
+					</div>
+					<div class="content">
+						<div class="shuoshuo">
+							<i class="icon iconfont pen">&#xe62e;</i>
+							<textarea>说点什么吧</textarea>
+							<span class="zhaopian"><i class="icon iconfont">&#xe62a;</i></span>
+							<p>与我相关<span class="mui-badge">6</span></p>
+						</div>
+						<div class="baby-list">
+							<div class="baby-time" id="2016-11-18" name="contDetail" guid="adb8d3f1-1c99-4736-a769-228f8f7ad450">
+								<div class="baby-tips"><i><e></e></i><span>6岁29天</span><em class="mui-pull-right">2016-11-18</em></div>
+								<p name="contDetail" guid="adb8d3f1-1c99-4736-a769-228f8f7ad450">再试九图</p>
+								<div class=" imghide" id="2016-11-18img">
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+								</div>
+								<p name="contDetail" guid="5206ab95-efaf-44f5-84f5-d2bded143049">直接发九张出错？</p>
+								<div class=" imghide" id="2016-11-18img">
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+									<div class="cell" jump="1" pguid="adb8d3f1-1c99-4736-a769-228f8f7ad450" style="width: 126.66666666666667px; height: 126.66666666666667px;">
+										<img src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/b1dba9d0-2c3b-42e3-9b64-fee49a8db83d.JPG" class="mui-media-object" >
+									</div>
+								</div>
+							</div>
+							<div class="baby-time" id="2016-11-23">
+								<div style="height: 0.7rem;"><i><e></e></i><span>6岁29天</span><em class="mui-pull-right">2016-11-18</em></div>
+								<p>一次机会……嗯你也有个很难</p>
+								<div class=" imghide" id="2016-11-23img">
+									<div class="cell" jump="1" style="width: 355px; height: 355px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-23/65ba5fdb-954b-4a03-b2a3-347a6f99007c.JPG" data-winpreview-group="2016-11-23"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-23/65ba5fdb-954b-4a03-b2a3-347a6f99007c.JPG">
+									</div>
+								</div>
+							</div>
+							<div class="baby-time" id="2016-11-19">
+								<i><e></e></i><span>6岁30天</span><em class="mui-pull-right">2016-11-19</em>
+								<p>嗯嗯嗯的是一个不知道为什么突然</p>
+								<div class=" imghide" id="2016-11-19img">
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/1e0596b7-4cb2-4ece-9e8d-53763106aef5.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/1e0596b7-4cb2-4ece-9e8d-53763106aef5.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/f1707d92-1591-4a1b-a6dd-5be81afe87e3.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/f1707d92-1591-4a1b-a6dd-5be81afe87e3.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/f34aefb5-a696-48e6-87ea-4c7e8341e94b.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/f34aefb5-a696-48e6-87ea-4c7e8341e94b.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/2676a66d-7ac8-4cb3-82ea-08a1ab064292.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/2676a66d-7ac8-4cb3-82ea-08a1ab064292.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/016ab836-7a73-4432-9efe-6db1f78e3895.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/016ab836-7a73-4432-9efe-6db1f78e3895.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/f4a70e0c-12dd-4ada-9d5c-7f9027620f14.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/f4a70e0c-12dd-4ada-9d5c-7f9027620f14.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/f2c49dd7-7199-4a2c-b7c3-050e6b8d07ae.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/f2c49dd7-7199-4a2c-b7c3-050e6b8d07ae.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/68970f56-b55a-4abb-b635-8b748b7a6b7f.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/68970f56-b55a-4abb-b635-8b748b7a6b7f.JPG">
+									</div>
+								</div>
+								<p>嗯的一次买这么多事少了些</p>
+								<div class=" imghide" id="2016-11-19img">
+									<div class="cell" jump="1" style="width: 177px; height: 177px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/bb1fd245-b535-4ba0-9c9a-8393cfd7cf50.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/bb1fd245-b535-4ba0-9c9a-8393cfd7cf50.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 177px; height: 177px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-19/66a53532-4793-4290-b938-b92f759d9224.JPG" data-winpreview-group="2016-11-19"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-19/66a53532-4793-4290-b938-b92f759d9224.JPG">
+									</div>
+								</div>
+							</div>
+							<div class="baby-time" id="2016-11-18">
+								<i><e></e></i><span>6岁29天</span><em class="mui-pull-right">2016-11-18</em>
+								<p>一下水道人参与……嗯就像这件衣服一次机会？是因为一</p><div class=" imghide" id="2016-11-18img">
+									<div class="cell" jump="1" style="width: 177px; height: 177px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-18/e1295ab2-2f7c-4c81-ae38-038af31127c7.JPG" data-winpreview-group="2016-11-18"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/e1295ab2-2f7c-4c81-ae38-038af31127c7.JPG">
+									</div>
+									<div class="cell" jump="1" style="width: 177px; height: 177px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-18/953a96ad-ed3f-4f72-8bef-d060fa3e5a1b.JPG" data-winpreview-group="2016-11-18"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-18/953a96ad-ed3f-4f72-8bef-d060fa3e5a1b.JPG">
+									</div>
+								</div>
+							</div>
+							<div class="baby-time" id="2016-11-14">
+								<i><e></e></i><span>6岁25天</span><em class="mui-pull-right">2016-11-14</em>
+								<p>是否就是说</p>
+								<div class=" imghide" id="2016-11-14img">
+									<div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;">
+										<img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/5eb6197e-9917-4358-9d76-6df1e325fa0e.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/5eb6197e-9917-4358-9d76-6df1e325fa0e.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/fc63bcc8-b700-45f2-bec6-6bbd2d1f4231.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/fc63bcc8-b700-45f2-bec6-6bbd2d1f4231.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/7b938228-bc6a-4de9-9424-21abd52e4a5d.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/7b938228-bc6a-4de9-9424-21abd52e4a5d.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/cec76245-df62-4a03-9d1f-1b9153021c16.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/cec76245-df62-4a03-9d1f-1b9153021c16.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/52ccf7c7-47b5-4ea8-889e-76f2bf41d4ce.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/52ccf7c7-47b5-4ea8-889e-76f2bf41d4ce.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload/dynamic/Org/2016-11-14/e2484b5d-8bf8-4d43-89aa-5ab82719c08f.JPG" data-winpreview-group="2016-11-14"  src="http://139.224.226.225:8765/Upload/dynamic/L512_382/2016-11-14/e2484b5d-8bf8-4d43-89aa-5ab82719c08f.JPG"></div></div></div><div class="baby-time" id="2016-11-13"><i><e></e></i><span>6岁24天</span><em class="mui-pull-right">2016-11-13</em><p>嗯嗯哼一次就是说我爱他乡异国，一定会有这么个情况？这里没有理由对了我是有个</p><div class=" imghide" id="2016-11-13img"><div class="cell" jump="1" style="width: 177px; height: 177px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload//dynamic/Org/2016-11-13/439ef04c-ee3a-4506-b7b4-172ccb6a577a.JPG" data-winpreview-group="2016-11-13"  src="http://139.224.226.225:8765/Upload//dynamic/L512_382/2016-11-13/439ef04c-ee3a-4506-b7b4-172ccb6a577a.JPG"></div><div class="cell" jump="1" style="width: 177px; height: 177px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload//dynamic/Org/2016-11-13/6c4efc0d-bb7a-45a1-9452-6d49f2bb047d.JPG" data-winpreview-group="2016-11-13"  src="http://139.224.226.225:8765/Upload//dynamic/L512_382/2016-11-13/6c4efc0d-bb7a-45a1-9452-6d49f2bb047d.JPG"></div></div><p>嗯的是一个小时左右刚从冰箱拿出来</p><div class=" imghide" id="2016-11-13img"><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload//dynamic/Org/2016-11-13/4803d498-05ad-4f41-a59c-0b5ece618c21.JPG" data-winpreview-group="2016-11-13"  src="http://139.224.226.225:8765/Upload//dynamic/L512_382/2016-11-13/4803d498-05ad-4f41-a59c-0b5ece618c21.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload//dynamic/Org/2016-11-13/7c83a4e0-765f-4fd6-a235-c60ef353aa17.JPG" data-winpreview-group="2016-11-13"  src="http://139.224.226.225:8765/Upload//dynamic/L512_382/2016-11-13/7c83a4e0-765f-4fd6-a235-c60ef353aa17.JPG"></div><div class="cell" jump="1" style="width: 117.66666666666667px; height: 117.66666666666667px;"><img class="mui-media-object" data-winpreview-src="http://139.224.226.225:8765/Upload//dynamic/Org/2016-11-13/a255807c-1833-4a0f-a4b6-780712a298c7.JPG" data-winpreview-group="2016-11-13"  src="http://139.224.226.225:8765/Upload//dynamic/L512_382/2016-11-13/a255807c-1833-4a0f-a4b6-780712a298c7.JPG"></div></div></div>
+
+							<!--<div class="baby-time">
+								<i><e></e></i><span>5岁9个月12天</span><em class="mui-pull-right">2016.08.08</em>
+								<div class="mui-table-view mui-grid-view">
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+								</div>
+							</div>
+							<div class="baby-time">
+								<i><e></e></i><span>5岁9个月11天</span><em class="mui-pull-right">2016.08.07</em>
+								<div class="mui-table-view mui-grid-view">
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list1.jpg" class="mui-media-object"></a>
+									</p>
+									<p class="mui-table-view-cell mui-media mui-col-xs-4">
+										<a href="#"><img src="images/img-list2.jpg" class="mui-media-object"></a>
+									</p>
+								</div>
+							</div>-->
+						</div>
+					</div>
+	        	</div>
+			</div>
+		</div>
+		<a class="courseIco" href="javascript://" id="offCanvasShow"><i class="icon iconfont">&#xe62c;</i></a>
+		<!--菜单部分-->
+		<aside id="offCanvasSide" class="mui-off-canvas-right">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="course-list">
+						<p>
+							<a href="javascript://" class="c-today">
+								<strong><i class="icon iconfont">&#xe62d;</i></strong>今天<span>2016.08.08</span>
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>9个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>8个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>7个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>6个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>5个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>4个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>3个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>2个月
+							</a>
+							<a href="javascript://">
+								<em><b></b></em>1个月
+							</a>
+							<a href="javascript://" class="baby-oneday">
+								<strong>
+																			<i class="icon iconfont">&#xe62b;</i>
+																		</strong>宝宝刚出生时
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/rem.js"></script>
+	<script>
+		mui.init({
+			swipeBack: false,
+		});
+		document.getElementById("gggsss").addEventListener("tap",function(){
+			alert(2);
+		})
+    	mui('.mui-scroll-wrapper').scroll();
+		//侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		//主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		//菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+		//Android暂不支持整体移动动画
+//		if(!mui.os.android) {
+//			document.getElementById("move-togger").classList.remove('mui-hidden');
+//			var spans = document.querySelectorAll('.android-only');
+//			for(var i = 0, len = spans.length; i < len; i++) {
+//				spans[i].style.display = "none";
+//			}
+//		}
+		document.getElementById('offCanvasShow').addEventListener('tap', function() {
+			offCanvasWrapper.offCanvas('show');
+		});
+		//主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll').scroll();
+		//实现ios平台的侧滑关闭页面；
+		if(mui.os.plus && mui.os.ios) {
+			offCanvasWrapper[0].addEventListener('shown', function(e) { //菜单显示完成事件
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+			offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'close'
+				});
+			});
+		}
+	</script>
+
+</html>

@@ -1,0 +1,199 @@
+{
+  "gonggao.html": {
+    "resources": [
+      "css/activeList.css",
+      "images/small-img1.jpg",
+      "fonts/mui.ttf",
+      "images/img-list2.jpg",
+      "js/rem.js",
+      "fonts/iconfont.woff",
+      "fonts/iconfont.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/img-list1.jpg",
+      "images/small-img2.jpg",
+      "css/theme.css",
+      "images/head.png"
+    ],
+    "refer": []
+  },
+  "dongtai.html": {
+    "resources": [
+      "images/banner/banner3.jpg",
+      "images/mid-img1.jpg",
+      "images/banner/banner1.jpg",
+      "images/banner/banner4.jpg",
+      "images/small-img1.jpg",
+      "images/img-list1.jpg",
+      "images/img-list2.jpg",
+      "images/small-img2.jpg",
+      "images/banner/banner2.jpg",
+      "images/init_1242x2208.png"
+    ],
+    "refer": []
+  },
+  "index.html": {
+    "resources": [
+      "dongtai.html",
+      "fonts/iconfont.css",
+      "css/activeList.css",
+      "js/mui.min.js",
+      "css/dynamics.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/rem.js",
+      "css/theme.css",
+      "images/head.jpg",
+      "images/head.png",
+      "fonts/iconfont.woff",
+      "js/commonbase.js",
+      "TeacherHome.html"
+    ],
+    "refer": [
+      "dongtai.html",
+      "Html/Popup/dynamicPopup.html",
+      "zhishi.html",
+      "space.html",
+      "leyuan.html",
+      "Html/Popup/mask.html",
+      "Html/UserInfo/UserInfo.html",
+      "Html/Popup/releaseFunction.html"
+    ]
+  },
+  "zhishi.html": {
+    "resources": [
+      "images/hot.png",
+      "fonts/iconfont.css",
+      "css/activeList.css",
+      "js/mui.min.js",
+      "css/dynamics.css",
+      "css/mui.min.css",
+      "images/img-list1.jpg",
+      "fonts/iconfont.ttf",
+      "js/rem.js",
+      "css/theme.css"
+    ],
+    "refer": []
+  },
+  "space.html": {
+    "resources": [
+      "images/baby-head.jpg",
+      "css/space.css",
+      "images/space-bg.jpg"
+    ],
+    "refer": []
+  },
+  "leyuan.html": {
+    "resources": [
+      "images/leyuanLogo.jpg"
+    ],
+    "refer": [
+      "Html/Notice/gonggao.html",
+      "Html/Recipes/shipu.html"
+    ]
+  },
+  "Html/Popup/dynamicPopup.html": {
+    "resources": [
+      "js/commonbase.js",
+      "fonts/iconfont.css",
+      "css/dynamics.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/theme.css"
+    ],
+    "refer": []
+  },
+  "Html/Popup/mask.html": {
+    "resources": [
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "Html/UserInfo/UserInfo.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/UserInfo.css",
+      "images/user.jpg",
+      "images/user-bg.jpg",
+      "js/mui.min.js",
+      "js/rem.js"
+    ],
+    "refer": []
+  },
+  "Html/Recipes/shipu.html": {
+    "resources": [
+      "images/mifan.jpg",
+      "js/mui.picker.js",
+      "css/feedback.css",
+      "js/mui.poppicker.js",
+      "images/tudou.jpg",
+      "images/shiyitu.gif",
+      "css/public.css",
+      "css/mui.poppicker.css",
+      "css/shipu.css",
+      "js/feedback.js",
+      "images/ege.jpg",
+      "css/mui.picker.css",
+      "js/mui.view.js",
+      "fonts/mui.ttf",
+      "fonts/iconfont.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/theme.css",
+      "images/head.png"
+    ],
+    "refer": []
+  },
+  "Html/Dynamic/activeDetail.html": {
+    "resources": [
+      "css/feedback.css",
+      "css/activeList.css",
+      "fonts/mui.ttf",
+      "css/public.css",
+      "css/active.css",
+      "fonts/iconfont.css",
+      "js/mui.min.js",
+      "images/active1.jpg",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/feedback.js",
+      "css/theme.css",
+      "js/mui.view.js",
+      "images/head.png",
+      "images/apple-touch-icon-precomposed.png",
+      "images/img-list2.jpg",
+      "images/head.jpg",
+      "images/img-list1.jpg",
+      "css/ggDetail.css",
+      "images/active2.jpg"
+    ],
+    "refer": []
+  },
+  "Html/Popup/releaseFunction.html": {
+    "resources": [
+      "js/mui.min.js"
+    ]
+  },
+  "TeacherHome.html": {
+    "resources": [
+      "images/init_1242x2208.png",
+      "images/small-img1.jpg",
+      "images/img-list1.jpg",
+      "images/img-list2.jpg",
+      "images/small-img2.jpg"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "fonts/iconfont.css",
+      "js/mui.min.js",
+      "css/login.css",
+      "images/baby-head.jpg",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/rem.js"
+    ]
+  }
+}

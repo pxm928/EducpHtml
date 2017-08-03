@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link href="../../fonts/iconfont.css" rel="stylesheet"/>
+		<script src="../../js/mui.min.js"></script>
+	    <script src="../../js/commonbase.js"></script>
+		<style type="text/css">
+			.mask {position: absolute; z-index: -1; width: 100%;height: 100%;background:#FFFFFF; opacity: 0.9;}
+			.close-but{position: absolute;transform:rotate(45deg);-webkit-transform:rotate(45deg); left: 50%; top: 50%; margin-top: -24px; margin-left: -24px; color: #FFFFFF; width:48px; height:48px; background: #f47276; border-radius:48px; text-align: center; font-size:30px; line-height:48px;}
+			.mui-grid-view.mui-grid-9{ background: transparent;border: 0;}
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell{border: 0;}
+			.fun-icon{ color:#ff7f83;}
+			.mui-slider-indicator .mui-indicator {background: #c1c1c1;border-radius: 50%;box-shadow:none;cursor: pointer;display: inline-block;height:10px;margin:1px;width:10px;}
+    		.mui-slider-indicator .mui-active.mui-indicator {background: #ffad42;}
+		</style>
+	</head>
+	<body style="background: transparent; overflow: hidden;">
+		<div id="mask" class="mask"></div>
+		<div style="position: absolute; bottom:60px; left: 0; width: 100%;">
+			<div id="Gallery" class="mui-slider" style="margin-top:15px;">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe61d;</span>
+									<div class="mui-media-body">动态</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe615;</span>
+									<div class="mui-media-body">活动</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe621;</span>
+									<div class="mui-media-body">作品</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe619;</span>
+									<div class="mui-media-body">公告</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe624;</span>
+									<div class="mui-media-body">荣誉</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe61a;</span>
+									<div class="mui-media-body">周计划</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe614;</span>
+									<div class="mui-media-body">食谱</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe61d;</span>
+									<div class="mui-media-body">体温</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="icon iconfont mui-icon fun-icon">&#xe61d;</span>
+									<div class="mui-media-body">请假</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator" style="position: relative;">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+		<div style="height:51px; position: absolute; left: 0; bottom: 0; width: 100%;">
+			<label id="close" class="mui-icon icon iconfont close-but">&#xe650;</label>
+		</div>
+		<script>
+			mui.init({
+				keyEventBind: {
+					backbutton: false  //关闭back按键监听
+				}
+			});
+			var parent;
+			mui.plusReady(function() {
+				parent = plus.webview.currentWebview().opener();
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				if(mui.os.ios){
+					plus.webview.currentWebview().setStyle({'popGesture':'none'});
+				}
+			});
+			document.getElementById("mask").addEventListener('tap',function(){
+				base.triggerEvent(parent,'closerelease');
+			})
+			document.getElementById("close").addEventListener('tap',function(){
+				base.triggerEvent(parent,'closerelease');
+			})
+		</script>
+	</body>
+</html>

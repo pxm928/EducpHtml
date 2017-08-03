@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed-iphone.png"/>
+
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <!--公用样式-->
+    <link href="css/theme.css" rel="stylesheet"/>
+    <!--公用活动列表-->
+    <link href="css/activeList.css" rel="stylesheet"/>
+    <!--动态样式-->
+    <link href="css/dynamics.css" rel="stylesheet"/>
+    <style type="text/css">
+    	#topPopover{ height: 10rem;}
+    </style>
+</head>
+	<script src="js/mui.min.js"></script>
+	<script src="js/commonbase.js"></script>
+	<script src="js/rem.js"></script>
+<body>
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+	    <div class="mui-inner-wrap">
+	    	<div class="statusTop"></div>  
+	        <div id="tabbar" class="mui-control-content mui-active">
+				<header class="mui-bar mui-bar-nav">
+					<!--我的头像-->
+					<div id="myhead" class="myhead">
+						<a class="myhead-img"><img src="images/head.jpg" /></a>
+					</div>
+					<h1 id="title" class="mui-title mui-text-center">动态</h1>
+					<div class="icon-group">
+						<a id="menu" href="#topPopover" class="mui-icon mui-action-menu icon iconfont  mui-pull-right">&#xe602;</a>
+						<a class="mui-icon mui-action-menu icon iconfont camera mui-pull-right">
+							&#xe601;</a>
+					</div>
+				</header>
+		        <div class="mui-content mui-scroll-wrapper">
+		        	<div class="mui-scroll">	
+					</div>
+		        </div>
+	        </div>
+			<nav id="foot" class="mui-bar mui-bar-tab caidan">
+				<a class="mui-tab-item mui-active" href="dongtai.html">
+					<span class="mui-icon icon iconfont">&#xe607;</span>
+					<span class="mui-tab-label">动态</span>
+				</a>
+				<a class="mui-tab-item" href="space.html">
+					<span class="mui-icon icon iconfont">&#xe604;<span class="mui-badge">9</span></span>
+					<span class="mui-tab-label">空间</span>
+				</a>
+				<a class="mui-tab-item" href="zhishi.html">
+					<span class="mui-icon icon iconfont">&#xe605;</span>
+					<span class="mui-tab-label">知识</span>
+				</a>
+				<a class="mui-tab-item" href="leyuan.html">
+					<span class="mui-icon icon iconfont">&#xe603;</span>
+					<span class="mui-tab-label">乐园</span>
+				</a>
+				<a class="mui-tab-item" href="xiaoxi.html">
+					<span class="mui-icon icon iconfont">&#xe606;</span>
+					<span class="mui-tab-label">消息</span>
+				</a>
+			</nav>
+			<!--<nav id="foot" class="mui-bar mui-bar-tab caidan">
+				<a class="mui-tab-item mui-active" href="dongtai.html">
+					<span class="mui-icon icon iconfont">&#xe607;</span>
+					<span class="mui-tab-label">动态</span>
+				</a>
+				<a class="mui-tab-item" href="zhishi.html">
+					<span class="mui-icon icon iconfont">&#xe605;</span>
+					<span class="mui-tab-label">知识</span>
+				</a>
+				<a class="mui-tab-item" href="javascript://">
+					<label class="mui-icon icon iconfont" style="display: block; position: absolute; left: 50%; top: 50%; margin-top: -23px; margin-left: -24px; color: #f47276; width:48px; height:48px; background: #FFFFFF; border-radius:48px; text-align: center; font-size:30px; line-height:48px;">
+						&#xe650;
+					</label>
+				</a>
+				<a class="mui-tab-item" href="leyuan.html">
+					<span class="mui-icon icon iconfont">&#xe603;</span>
+					<span class="mui-tab-label">乐园</span>
+				</a>
+				<a class="mui-tab-item" href="xiaoxi.html">
+					<span class="mui-icon icon iconfont">&#xe606;</span>
+					<span class="mui-tab-label">消息</span>
+				</a>
+			</nav>-->
+	    </div>
+	</div>
+	<!--右上角弹出菜单-->
+	<div id="topPopover" class="mui-popover">
+		<div class="mui-popover-arrow"></div>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#"><i class="icon iconfont">&#xe60e;</i>请假</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#"><i class="icon iconfont" style="font-size: 1rem;">&#xe60d;</i>联系人</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+    	//滚动条
+	    mui.init({
+			keyEventBind: {
+				backbutton: false  //关闭back按键监听
+			}
+		});
+	    mui('.mui-scroll-wrapper').scroll(); 
+//	    var subpages = ['dongtai.html', 'space.html', 'zhishi.html', 'leyuan.html'];
+		var subpages = ['TeacherHome.html', 'space.html', 'zhishi.html', 'leyuan.html'];
+		var subpage_style = {top: '65px',bottom: '50px',zindex:1,background: 'transparent'};
+		var page_style= {top: '0px',bottom: '50px',zindex:1,background: 'transparent'};
+		var aniShow = {},isPopup,userInfoPoput,isrelease,showMenu=false,main,mask;
+		 //创建子页面，首个选项卡页面显示，其它均隐藏；
+		mui.plusReady(function() {
+			plus.nativeUI.showWaiting();
+			main = plus.webview.currentWebview();
+			if(mui.os.ios){
+				main.setStyle({'popGesture':'none'});
+			}
+			for (var i = 0; i < 4; i++) {
+				var temp = {};
+				var sub = plus.webview.create(subpages[i], subpages[i], (i==1? page_style: subpage_style));
+				if (i > 0) {
+					sub.hide();
+				}else{
+					sub.addEventListener("loaded",function(){
+						plus.nativeUI.closeWaiting();
+					})
+					temp[subpages[i]] = "true";
+					mui.extend(aniShow,temp);
+				}
+				main.append(sub);
+			}
+			setTimeout(function(){
+				isPopup = mui.preload({
+				    url:'Html/Popup/dynamicPopup.html',
+					id:'dynamicPopup.html',
+					styles:{
+						zindex:1,
+						top:'0px',
+						background:'transparent'
+					}
+				});
+				isrelease=mui.preload({
+				    url:'Html/Popup/releaseFunction.html',
+					id:'releaseFunction.html',
+					styles:{
+						zindex:1,
+						top:'0px',
+						background:'transparent'
+					}
+				});
+				mask = mui.preload({
+				    url:'Html/Popup/mask.html',
+					id:'mask.html',
+					styles:{
+						background:'transparent',
+						zindex: -344
+					}
+				});
+				mask.hide();
+				main.append(mask);
+				userInfoPoput = mui.preload({
+				    url:'Html/UserInfo/UserInfo.html',
+					id:'UserInfo.html',
+					styles: {
+						left: 0,
+						width: '83%',
+						zindex: -1
+					}
+				});
+			},300);
+		});
+		document.getElementById("menu").addEventListener('tap',function(){
+			isPopup.show('none');
+		});
+		document.getElementById('myhead').addEventListener('tap',function(){
+			openMenu();
+		});
+		window.addEventListener("closePopup",function(event){
+			if(event.detail.code==1)
+			{
+				alert(event.detail.code==1?"请假":"联系人");
+			}else{
+				base.openWin("Html/UserInfo/contacts.html");
+			}
+			isPopup.hide();
+		})
+		window.addEventListener("closerelease",function(e){
+			isrelease.hide();
+		})
+		window.addEventListener('closeInfoClick',function(){
+			closeMenu();
+		})
+		 //当前激活选项
+		var activeTab = subpages[0];
+		var title = document.getElementById("title");
+		 //选项卡点击事件
+		mui('.mui-bar-tab').on('tap', 'a', function(e) {
+			var targetTab = this.getAttribute('href');
+			if(targetTab=="javascript://"){
+				this.classList.remove("mui-active");
+				isrelease.show('none');
+				return false;
+			}
+			if (targetTab == activeTab) {
+				return;
+			}
+			//更换标题
+			title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+			//显示目标选项卡
+			//若为iOS平台或非首次显示，则直接显示
+			if(mui.os.ios||aniShow[targetTab]){
+				plus.webview.show(targetTab);
+			}else{
+				//否则，使用fade-in动画，且保存变量
+				var temp = {};
+				temp[targetTab] = "true";
+				mui.extend(aniShow,temp);
+				plus.webview.show(targetTab,"fade-in",300);
+			}
+			//隐藏当前;
+			plus.webview.hide(activeTab);
+			//更改当前活跃的选项卡
+			activeTab = targetTab;
+		});
+		
+		/**
+		 * 显示菜单菜单
+		 */
+		function openMenu() {
+			if (!showMenu) {
+				//侧滑菜单处于隐藏状态，则立即显示出来；
+				//显示完毕后，根据不同动画效果移动窗体；
+				userInfoPoput.show('none', 0, function() {
+					//主窗体开始侧滑；
+					main.setStyle({
+						left: '83%',
+						transition: {
+							duration: 150
+						}
+					});
+					showMenu = true;
+				});
+				mask.setStyle({zindex:9999})
+				//显示遮罩
+				mask.show();
+			}
+		}
+		
+		/**
+		 * 关闭侧滑菜单（业务部分）
+		 */
+		function closeMenu() {
+			if (showMenu) {
+				//关闭遮罩；
+				//主窗体开始侧滑；
+				main.setStyle({
+					left: '0',
+					transition: {
+						duration: 150
+					}
+				});
+				
+				//等窗体动画结束后，隐藏菜单webview，节省资源；
+				setTimeout(function() {
+					userInfoPoput.hide();
+				}, 200);
+				mask.setStyle({zindex:-2});
+				mask.hide();
+				//改变标志位
+				showMenu = false;
+			}
+		}
+	</script>
+</body>
+
+</html>
